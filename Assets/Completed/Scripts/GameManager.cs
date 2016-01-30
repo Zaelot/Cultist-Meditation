@@ -72,10 +72,12 @@ namespace Completed
 			levelImage = GameObject.Find("LevelImage");
 			
 			//Get a reference to our text LevelText's text component by finding it by name and calling GetComponent.
-			levelText = GameObject.Find("LevelText").GetComponent<Text>();
+			//levelText = GameObject.Find("LevelText").GetComponent<Text>();
+			levelText = GameObject.Find("Text Floor").GetComponent<Text>();
 			
 			//Set the text of levelText to the string "Day" and append the current level number.
-			levelText.text = "Day " + level;
+			//levelText.text = "Day " + level;
+			levelText.text = level.ToString();
 			
 			//Set levelImage to active blocking player's view of the game board during setup.
 			levelImage.SetActive(true);
