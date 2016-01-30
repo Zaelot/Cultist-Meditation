@@ -56,8 +56,8 @@ namespace Completed
 					//At each index add a new Vector3 to our list with the x and y coordinates of that position.
 					gridPositions.Add (new Vector3(x, y, 0f));
 				}
-			}
-		}
+			}//end.for(columns)
+		} //End.InitialisetList()
 		
 		
 		//Sets up the outer walls and floor (background) of the game board.
@@ -85,9 +85,9 @@ namespace Completed
 					
 					//Set the parent of our newly instantiated object instance to boardHolder, this is just organizational to avoid cluttering hierarchy.
 					instance.transform.SetParent (boardHolder);
-				}
-			}
-		}
+				}//end.for(rows)
+			}//end.for(columns)
+		} //End.BoardSetup()
 		
 		
 		//RandomPosition returns a random position from our list gridPositions.
@@ -104,7 +104,7 @@ namespace Completed
 			
 			//Return the randomly selected Vector3 position.
 			return randomPosition;
-		}
+		} //End.RandomPosition()
 		
 		
 		//LayoutObjectAtRandom accepts an array of game objects to choose from along with a minimum and maximum range for the number of objects to create.
@@ -125,7 +125,7 @@ namespace Completed
 				//Instantiate tileChoice at the position returned by RandomPosition with no change in rotation
 				Instantiate(tileChoice, randomPosition, Quaternion.identity);
 			}
-		}
+		} //End.LayoutObjectAtRandom()
 		
 		
 		//SetupScene initializes our level and calls the previous functions to lay out the game board
@@ -151,6 +151,6 @@ namespace Completed
 			
 			//Instantiate the exit tile in the upper right hand corner of our game board
 			Instantiate (exit, new Vector3 (columns - 1, rows - 1, 0f), Quaternion.identity);
-		}
-	}
-}
+		} //End.SetupScene()
+	} //End.BoardManager{}
+} //End.Completed{} - namespace
