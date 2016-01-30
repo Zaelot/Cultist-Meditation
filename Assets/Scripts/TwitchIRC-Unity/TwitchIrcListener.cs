@@ -16,6 +16,7 @@ public class TwitchIrcListener : MonoBehaviour {
 		string msgString = msg.Substring(msgIndex + IRC.channelName.Length + 11);
 		string user = msg.Substring(1, msg.IndexOf('!') - 1);
 
+		Debug.Log (user + ":" + msgString);
 		if (user == botName) {
 			//add new message.
 			SendInputMessage(msgString);
