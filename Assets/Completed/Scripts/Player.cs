@@ -23,11 +23,13 @@ namespace Completed
 		private Animator animator;					//Used to store a reference to the Player's animator component.
 		private int food;							//Used to store player food points total during level.
 		private Vector2 touchOrigin = -Vector2.one;	//Used to store location of screen touch origin for mobile controls.
+
+		//TODO ~Z 16.01.30 | Need something to avoid moving by itself when spamming RelateMove()
 		
 		
 		//Start overrides the Start function of MovingObject
 		protected override void Start ()
-		{
+		{			
 			//Get a component reference to the Player's animator component
 			animator = GetComponent<Animator>();
 			
@@ -39,7 +41,7 @@ namespace Completed
 			
 			//Call the Start function of the MovingObject base class.
 			base.Start ();
-		}
+		} //End.Start() - override
 		
 		
 		//This function is called when the behaviour becomes disabled or inactive.
@@ -47,7 +49,7 @@ namespace Completed
 		{
 			//When Player object is disabled, store the current local food total in the GameManager so it can be re-loaded in next level.
 			GameManager.instance.playerFoodPoints = food;
-		}
+		} //End.OnDisable()
 		
 		
 		private void Update ()
@@ -121,12 +123,13 @@ namespace Completed
 				//Pass in horizontal and vertical as parameters to specify the direction to move Player in.
 				AttemptMove<Wall> (horizontal, vertical);
 			}
-		}
-		
+		} //End.Update()
+					
 		//AttemptMove overrides the AttemptMove function in the base class MovingObject
 		//AttemptMove takes a generic parameter T which for Player will be of the type Wall, it also takes integers for x and y direction to move in.
 		protected override void AttemptMove <T> (int xDir, int yDir)
 		{
+			//Debug.Log ("x: " + xDir + ", y: " + yDir); //-1x = left, 1x = right; -1y = down, 1y = up
 			//Every time player moves, subtract from food points total.
 			food--;
 			
@@ -151,7 +154,11 @@ namespace Completed
 			
 			//Set the playersTurn boolean of GameManager to false now that players turn is over.
 			GameManager.instance.playersTurn = false;
-		}
+		} //End.AttemptMove()
+
+		public void RelateMove( int xDir, int yDir ) {
+			AttemptMove<Wall> (xDir, yDir);
+		} //End.RelateMove()
 		
 		
 		//OnCantMove overrides the abstract function OnCantMove in MovingObject.
@@ -166,7 +173,7 @@ namespace Completed
 			
 			//Set the attack trigger of the player's animation controller in order to play the player's attack animation.
 			animator.SetTrigger ("playerChop");
-		}
+		} //End.OnCantMove() - override
 		
 		
 		//OnTriggerEnter2D is sent when another object enters a trigger collider attached to this object (2D physics only).
@@ -213,7 +220,7 @@ namespace Completed
 				//Disable the soda object the player collided with.
 				other.gameObject.SetActive (false);
 			}
-		}
+		} //End.OnTriggerEnter()
 		
 		
 		//Restart reloads the scene when called.
@@ -221,7 +228,7 @@ namespace Completed
 		{
 			//Load the last scene loaded, in this case Main, the only scene in the game.
 			Application.LoadLevel (Application.loadedLevel);
-		}
+		} //End.Restart()
 		
 		
 		//LoseFood is called when an enemy attacks the player.
@@ -239,7 +246,7 @@ namespace Completed
 			
 			//Check to see if game has ended.
 			CheckIfGameOver ();
-		}
+		} //End.LoseFood()
 		
 		
 		//CheckIfGameOver checks if the player is out of food points and if so, ends the game.
@@ -257,7 +264,7 @@ namespace Completed
 				//Call the GameOver function of GameManager.
 				GameManager.instance.GameOver ();
 			}
-		}
-	}
-}
+		} //End.CheckIfGamerOver()
+	} //End.Player{}
+} //End.Completed{} - namespace
 

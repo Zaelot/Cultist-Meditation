@@ -22,6 +22,6 @@ namespace Completed
 				
 				//Instantiate SoundManager prefab
 				Instantiate(soundManager);
-		}
-	}
-}
+		} //End.Awake()
+	} //End.Loader{}
+} //End.Completed{} - namespace
