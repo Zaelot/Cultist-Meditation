@@ -438,6 +438,73 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 632387568}
+--- !u!1 &652624660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 652624661}
+  - 222: {fileID: 652624663}
+  - 114: {fileID: 652624662}
+  m_Layer: 5
+  m_Name: Image Loading
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &652624661
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 652624660}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1637681000}
+  m_RootOrder: 5
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000002861023, y: -0.25}
+  m_SizeDelta: {x: 460, y: 258.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &652624662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 652624660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &652624663
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 652624660}
 --- !u!1 &710828279
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,7 +513,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 710828280}
-  - 114: {fileID: 710828281}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -466,22 +532,7 @@ Transform:
   m_Children:
   - {fileID: 1991196040}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
---- !u!114 &710828281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 710828279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d59e4dfb9c9404b9471de0c983feac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelStartDelay: 2
-  turnDelay: 0.1
-  playerFoodPoints: 100
-  playersTurn: 1
+  m_RootOrder: 2
 --- !u!1 &760659324
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,9 +712,9 @@ GameObject:
   - 50: {fileID: 881706626}
   - 114: {fileID: 881706625}
   - 212: {fileID: 881706629}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cultist
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -677,9 +728,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1706141503}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!114 &881706624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -712,13 +764,13 @@ MonoBehaviour:
   pointsPerSoda: 20
   wallDamage: 1
   foodText: {fileID: 2116703485}
-  moveSound1: {fileID: 0}
-  moveSound2: {fileID: 0}
-  eatSound1: {fileID: 0}
-  eatSound2: {fileID: 0}
-  drinkSound1: {fileID: 0}
-  drinkSound2: {fileID: 0}
-  gameOverSound: {fileID: 0}
+  moveSound1: {fileID: 8300000, guid: 892962212a4b74d1c9f578a3b6ea6439, type: 3}
+  moveSound2: {fileID: 8300000, guid: a826bc3d758db43d6ae9caf415b63d1d, type: 3}
+  eatSound1: {fileID: 8300000, guid: 1cb61f83d60374c7389bb547431919e3, type: 3}
+  eatSound2: {fileID: 8300000, guid: 062161c1897a54088a5430f8c197e1b8, type: 3}
+  drinkSound1: {fileID: 8300000, guid: b6b608537288246c9a464915db27bf52, type: 3}
+  drinkSound2: {fileID: 8300000, guid: bcb9dda73ee914d3e8f252895f73f461, type: 3}
+  gameOverSound: {fileID: 8300000, guid: e2beefeb2273f4efe992adf5b8d67c29, type: 3}
 --- !u!50 &881706626
 Rigidbody2D:
   serializedVersion: 2
@@ -791,7 +843,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -900995045
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -881,7 +933,6 @@ GameObject:
   - 223: {fileID: 1637680999}
   - 114: {fileID: 1637680998}
   - 114: {fileID: 1637680997}
-  - 114: {fileID: 1637681001}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -959,28 +1010,14 @@ RectTransform:
   - {fileID: 1831021226}
   - {fileID: 760659325}
   - {fileID: 2032208891}
+  - {fileID: 652624661}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1637681001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1637680996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9664006bbf82436782d24280d78f122, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  efxSource: {fileID: 0}
-  musicSource: {fileID: 0}
-  lowPitchRange: 0.95
-  highPitchRange: 1.05
 --- !u!1 &1706141498
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,7 +1105,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 881706623}
   m_RootOrder: 0
 --- !u!114 &1706141504
 MonoBehaviour:
@@ -1108,8 +1145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c23d8039e659d46a7b71f4f3c0b02486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 710828279}
-  soundManager: {fileID: 1637680996}
+  gameManager: {fileID: 133658, guid: 1ca8c6e960c494bbd937610290f80d1b, type: 2}
+  soundManager: {fileID: 109316, guid: 76cd81135280f4ad6a4fa80f6422aea2, type: 2}
 --- !u!1 &1732075017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1857,4 +1894,4 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
