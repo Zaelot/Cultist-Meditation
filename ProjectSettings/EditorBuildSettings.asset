@@ -4,4 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/HomeApartment.unity
+  - enabled: 1
+    path: Assets/Scenes/Level_1.unity
+  - enabled: 1
+    path: Assets/Scenes/Level_2.unity
+  - enabled: 1
+    path: Assets/Scenes/Level_3.unity
+  - enabled: 1
+    path: Assets/Scenes/Level_4.unity
+  - enabled: 1
+    path: Assets/Scenes/Level_5.unity
