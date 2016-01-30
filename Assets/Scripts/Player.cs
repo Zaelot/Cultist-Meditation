@@ -59,7 +59,7 @@ namespace Cultist
         private void Update()
         {
             //If it's not the player's turn, exit the function.
-            if (!GameManager.instance.playersTurn) return;
+            //if (!GameManager.instance.playersTurn) return;
 
             int horizontal = 0;     //Used to store the horizontal move direction.
             int vertical = 0;       //Used to store the vertical move direction.
@@ -156,7 +156,7 @@ namespace Cultist
             CheckIfGameOver();
 
             //Set the playersTurn boolean of GameManager to false now that players turn is over.
-            GameManager.instance.playersTurn = false;
+            Manager.instance.playersTurn = false;
         }
 
 
@@ -261,7 +261,7 @@ namespace Cultist
                 //SoundManager.instance.musicSource.Stop();
 
                 //Call the GameOver function of GameManager.
-                GameManager.instance.GameOver();
+                Manager.instance.GameOver();
             }
         }
 

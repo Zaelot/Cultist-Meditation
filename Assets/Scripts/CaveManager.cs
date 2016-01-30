@@ -4,9 +4,8 @@ using System.Collections.Generic; 		//Allows us to use Lists.
 using Random = UnityEngine.Random; 		//Tells Random to use the Unity Engine random number generator.
 
 namespace Cultist	
-{
-	
-	public class BoardManager : MonoBehaviour
+{	
+	public class CaveManager : MonoBehaviour
 	{
 		// Using Serializable allows us to embed a class with sub properties in the inspector.
 		[Serializable]
@@ -43,6 +42,10 @@ namespace Cultist
 		//Clears our list gridPositions and prepares it to generate a new board.
 		void InitialiseList ()
 		{
+
+            Debug.Log("Lets try to initialize level");
+
+
 			//Clear our list gridPositions.
 			gridPositions.Clear ();
 			
@@ -130,8 +133,11 @@ namespace Cultist
 		//SetupScene initializes our level and calls the previous functions to lay out the game board
 		public void SetupScene (int level)
 		{
-			//Creates the outer walls and floor.
-			BoardSetup ();
+            Debug.Log("Lets try to initialize level");
+
+
+            //Creates the outer walls and floor.
+            BoardSetup ();
 			
 			//Reset our list of gridpositions.
 			InitialiseList ();
@@ -141,10 +147,10 @@ namespace Cultist
 			
 			//Instantiate a random number of food tiles based on minimum and maximum, at randomized positions.
 			LayoutObjectAtRandom (foodTiles, foodCount.minimum, foodCount.maximum);
-			
-			//Determine number of enemies based on current level number, based on a logarithmic progression
-			int enemyCount = (int)Mathf.Log(level, 2f);
-			
+
+            //Determine number of enemies based on current level number, based on a logarithmic progression
+            //int enemyCount = (int)Mathf.Log(level, 2f);
+            int enemyCount = 2;
 			//Instantiate a random number of enemies based on minimum and maximum, at randomized positions.
 			LayoutObjectAtRandom (enemyTiles, enemyCount, enemyCount);
 			

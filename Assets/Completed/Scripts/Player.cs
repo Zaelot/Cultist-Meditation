@@ -32,10 +32,10 @@ namespace Completed
 			animator = GetComponent<Animator>();
 			
 			//Get the current food point total stored in GameManager.instance between levels.
-			//food = GameManager.instance.playerFoodPoints;
+			food = GameManager.instance.playerFoodPoints;
 			
 			//Set the foodText to reflect the current player food total.
-			//foodText.text = "Food: " + food;
+			foodText.text = "Food: " + food;
 			
 			//Call the Start function of the MovingObject base class.
 			base.Start ();
@@ -128,10 +128,10 @@ namespace Completed
 		protected override void AttemptMove <T> (int xDir, int yDir)
 		{
 			//Every time player moves, subtract from food points total.
-			//food--;
+			food--;
 			
 			//Update food text display to reflect current score.
-			//foodText.text = "Food: " + food;
+			foodText.text = "Food: " + food;
 			
 			//Call the AttemptMove method of the base class, passing in the component T (in this case Wall) and x and y direction to move.
 			base.AttemptMove <T> (xDir, yDir);
