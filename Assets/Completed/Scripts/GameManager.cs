@@ -39,6 +39,7 @@ namespace Completed
 		//Awake is always called before any Start functions ~Z 16.01.30 | Not 100% clear whether this is done on each Scene reload?
 		void Awake()
 		{
+			Debug.Log ("GameManager is Awake!");
 			//~Z 16.01.30 | Setting up this singleton - important since we're using this with persistent DontDestroyOnLoad
 			//Check if instance already exists
 			if (instance == null)				
@@ -69,8 +70,9 @@ namespace Completed
 		//This is called each time a scene is loaded.
 		void OnLevelWasLoaded(int index)
 		{
+			Debug.Log ("Changed level, incrementing: " + level);
 			//~Z 16.01.30 | if on second playthrough, reset level count and skip building the level
-			if (SceneManager.GetActiveScene ().name == "HomeApartment") {
+			if ( SceneManager.GetActiveScene ().name == "HomeApartment" ) {
 				level = 0;
 				doingSetup = true; //~Z 16.01.30 | don't attempt enemy movement while in start menu
 				return;
@@ -79,12 +81,13 @@ namespace Completed
 			//Add one to our level number.
 			level++;
 			//Call InitGame to initialize our level.
-			InitGame();
+			InitGame ();
 		} //End.OnLevelWasLoaded()
 		
 		//Initializes the game for each level.
 		void InitGame()
 		{
+			string levelName = SceneManager.GetActiveScene ().name;
 			//While doingSetup is true the player can't move, prevent player from moving while title card is up.
 			doingSetup = true;
 			
@@ -101,7 +104,7 @@ namespace Completed
 			levelText.text = level.ToString();
 			
 			//Set levelImage to active blocking player's view of the game board during setup.
-//			levelImage.SetActive(true); //TODO ~Z 16.01.30 | Decide if it's indeed needed. If so, use HideLevelImage as well.
+			levelImage.SetActive(true); //TODO ~Z 16.01.30 | Decide if it's indeed needed. If so, use HideLevelImage as well.
 			
 			//Call the HideLevelImage function with a delay in seconds of levelStartDelay.
 			Invoke("HideLevelImage", levelStartDelay); //~Z 16.01.30 | Apparently assuming the level creation will be done by the time the levelStartDelay runs out. Odd.
@@ -110,7 +113,9 @@ namespace Completed
 			//enemies.Clear();
 			
 			//Call the SetupScene function of the BoardManager script, pass it current level number.
-			boardScript.SetupScene(level); //TODO ~Z 16.01.30 | Need something here to decide if it's not the first playthrough and recreate the already created levels?
+			if (levelName != "Level_1" && levelName != "Level_2" && levelName != "Level_3" && levelName != "Level_4" && levelName != "Level_5")
+				boardScript.SetupScene(level); //TODO ~Z 16.01.30 | Need something here to decide if it's not the first playthrough and recreate the already created levels?
+			
 			
 		} //End.InitGame()
 		
@@ -119,6 +124,7 @@ namespace Completed
 		//Hides black image used between levels
 		void HideLevelImage()
 		{
+			Debug.Log ("Disabling cover.");
 			//Disable the levelImage gameObject.
 			levelImage.SetActive(false);
 			
@@ -197,6 +203,15 @@ namespace Completed
 			//Enemies are done moving, set enemiesMoving to false.
 			enemiesMoving = false;
 		} //End.MoveEnemies()
+
+		//~Z 16.01.31 | switch between scenes
+		public void ChangeLevel () {
+			Debug.Log ("Level: " + level);
+			if (level >= 6) //if we're at the end, go to start menu
+				level = 0;
+			Debug.Log ( "Changing scene to: " + level ); //somehow constantly 0
+			SceneManager.LoadScene (level);
+		} //End.ChangeLeveL()
 	} //End.GameManager{}
 } //End.Completed{} - namespace
 

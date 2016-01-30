@@ -63,8 +63,16 @@ namespace Completed
 		//Sets up the outer walls and floor (background) of the game board.
 		void BoardSetup ()
 		{
+			Debug.Log ("Creating board.");
+			//~Z 16.01.31 | Clear out the previous one
+			var levelHolder = GameObject.Find ("Level");
+			if (levelHolder)
+				for ( int i = levelHolder.transform.childCount; i <= 0; --i )
+					GameObject.Destroy( levelHolder.transform.GetChild(i - 1) );
 			//Instantiate Board and set boardHolder to its transform.
 			boardHolder = new GameObject ("Board").transform;
+			if (levelHolder)
+				boardHolder.SetParent ( levelHolder.transform, true );
 			
 			//Loop along x axis, starting from -1 (to fill corner) with floor or outerwall edge tiles.
 			for(int x = -1; x < columns + 1; x++)
