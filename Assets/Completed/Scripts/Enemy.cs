@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+/// <summary>
+/// Enemy. Taken as base template from 2D Roguelike.
+/// </summary>
 namespace Completed
 {
 	//Enemy inherits from MovingObject, our base class for objects that can move, Player also inherits from this.
@@ -14,6 +18,11 @@ namespace Completed
 		private Animator animator;							//Variable of type Animator to store a reference to the enemy's Animator component.
 		private Transform target;							//Transform to attempt to move toward each turn.
 		private bool skipMove;								//Boolean to determine whether or not enemy should skip a turn or move this turn.
+		//TODO ~Z 16.01.30 | Implement the following:
+		public bool playerIdentified = false;				//~Z 16.01.30 | Field of view tag
+		//public Vector2 locationCurrent;					//~Z 16.01.30 | Store the location for subsequent playthroughs
+		//public bool looted = false;						//~Z 16.01.30 | Whether the corpse has been looted
+		//public bool dead = false;							//~Z 16.01.30 | Whether it's a corpse
 		
 		
 		//Start overrides the virtual Start function of the base class.
@@ -25,13 +34,15 @@ namespace Completed
 			
 			//Get and store a reference to the attached Animator component.
 			animator = GetComponent<Animator> ();
-			
+
+			//TODO ~Z 16.01.30 | Need the field of view.
 			//Find the Player GameObject using it's tag and store a reference to its transform component.
 			target = GameObject.FindGameObjectWithTag ("Player").transform;
 			
 			//Call the start function of our base class MovingObject.
+			//if (!dead) //TODO ~Z 16.01.30 | activate
 			base.Start ();
-		}
+		} //End.Start() - override
 		
 		
 		//Override the AttemptMove function of MovingObject to include functionality needed for Enemy to skip turns.
@@ -39,11 +50,10 @@ namespace Completed
 		protected override void AttemptMove <T> (int xDir, int yDir)
 		{
 			//Check if skipMove is true, if so set it to false and skip this turn.
-			if(skipMove)
+			if(skipMove)// || dead //TODO ~Z 16.01.30 | Enable.
 			{
 				skipMove = false;
-				return;
-				
+				return;				
 			}
 			
 			//Call the AttemptMove function from MovingObject.
@@ -51,7 +61,7 @@ namespace Completed
 			
 			//Now that Enemy has moved, set skipMove to true to skip next move.
 			skipMove = true;
-		}
+		} //End.AttemptMove() - override
 		
 		
 		//MoveEnemy is called by the GameManger each turn to tell each Enemy to try to move towards the player.
@@ -74,14 +84,17 @@ namespace Completed
 				xDir = target.position.x > transform.position.x ? 1 : -1;
 			
 			//Call the AttemptMove function and pass in the generic parameter Player, because Enemy is moving and expecting to potentially encounter a Player
+			//if (playerIdentified) //TODO ~Z 16.01.30 | Activate - Visibility toggle - Possibly need to store players last known position, and attempt to move towards it
 			AttemptMove <Player> (xDir, yDir);
-		}
+		} //End.MoveEnemy()
 		
 		
 		//OnCantMove is called if Enemy attempts to move into a space occupied by a Player, it overrides the OnCantMove function of MovingObject 
 		//and takes a generic parameter T which we use to pass in the component we expect to encounter, in this case Player
 		protected override void OnCantMove <T> (T component)
 		{
+			//if (dead) return; //TODO ~Z 16.01.30 | Activate - check if corpse, stop actions
+
 			//Declare hitPlayer and set it to equal the encountered component.
 			Player hitPlayer = component as Player;
 			
@@ -93,6 +106,6 @@ namespace Completed
 			
 			//Call the RandomizeSfx function of SoundManager passing in the two audio clips to choose randomly between.
 			SoundManager.instance.RandomizeSfx (attackSound1, attackSound2);
-		}
-	}
-}
+		} //End.OnCantMove() - override
+	} //End.Enemy{}
+} //End.Completed{} - namespace
