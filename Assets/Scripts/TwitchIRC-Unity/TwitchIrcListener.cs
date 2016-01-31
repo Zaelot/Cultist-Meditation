@@ -121,7 +121,8 @@ public class TwitchIrcListener : MonoBehaviour {
 	void Start()
 	{
 		IRC = this.GetComponent<TwitchIRC>();
-		cultist = cultistGO.GetComponent<Cultist>();
+		if (cultistGO)
+			cultist = cultistGO.GetComponent<Cultist>();
 		//IRC.SendCommand("CAP REQ :twitch.tv/tags"); //register for additional data such as emote-ids, name color etc.
 		IRC.messageRecievedEvent.AddListener(OnChatMsgReceived);
 
@@ -136,6 +137,25 @@ public class TwitchIrcListener : MonoBehaviour {
 
 	void PollReset()
 	{
+<<<<<<< HEAD
+		Debug.Log ("Attempting a !poll");
+		IRC.SendMsg ("!poll");
+	} //End.PollReset()
+
+	public void SetCultist() {
+		if (cultistGO)
+			cultist = cultistGO.GetComponent<Cultist> ();
+		else {
+			cultistGO = GameObject.Find ("Cultist");
+			if (cultistGO)
+				cultist = cultistGO.GetComponent<Cultist> ();
+			else
+				Debug.LogWarning ("Cultist not found.");
+		}
+			
+	} //End.SetCultist()
+} //End.TwitchIRCListeners{}
+=======
 		IRC.SendMsg ("!moobot poll reset");
 		chosenUserVote = "";
 	}
@@ -150,3 +170,4 @@ public class TwitchIrcListener : MonoBehaviour {
 		IRC.SendMsg ("!moobot raffle userlist");
 	}
 }
+>>>>>>> master
