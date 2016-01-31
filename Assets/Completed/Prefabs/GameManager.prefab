@@ -118,10 +118,10 @@ MonoBehaviour:
   chosenUser: 
   cultistGO: {fileID: 0}
   voteOptions:
-  - up
-  - down
-  - left
-  - right
+  - w
+  - s
+  - a
+  - d
   timer: 30
 --- !u!1001 &100100000
 Prefab:

@@ -11,7 +11,7 @@ public class TwitchIrcListener : MonoBehaviour {
 	public GameObject cultistGO;
 	private Cultist cultist;
 	private TwitchIRC IRC;
-	public string[] voteOptions = new string[] { "up", "down", "left", "right" };
+	public string[] voteOptions = new string[] { "w", "s", "a", "d" };
 	public float timer = 30.0f;
 	//when message is recieved from IRC-server or our own message.
 	void OnChatMsgReceived(string msg)
@@ -36,23 +36,23 @@ public class TwitchIrcListener : MonoBehaviour {
 
 			if (msgString.Contains("Found no results")) {
 				string finalString = voteOptions [UnityEngine.Random.Range (0, voteOptions.Length)];
-				IRC.SendMsg ("Nobody voted? Let's move " + finalString + " then.");
+				IRC.SendMsg ("Nobody voted? Let's do '" + finalString + "' then.");
 				ExecuteCommand(finalString);
 			}
 		}
 		if (user == chosenUser) {
 			switch (msgString.ToLower()) {
-			case "!vote up":
-				chosenUserVote = "up";
+			case "!vote w":
+				chosenUserVote = "w";
 				break;
-			case "!vote down":
-				chosenUserVote = "down";
+			case "!vote s":
+				chosenUserVote = "s";
 				break;
 			case "!vote left":
-				chosenUserVote = "left";
+				chosenUserVote = "a";
 				break;
 			case "!vote right":
-				chosenUserVote = "right";
+				chosenUserVote = "d";
 				break;
 			default:
 				break;
@@ -85,11 +85,18 @@ public class TwitchIrcListener : MonoBehaviour {
 		}
 
 		// Check if vote succeeds
-		string finalString = "";
-		if (votePercents.Count == 1 || int.Parse(votePercents [0].ToString()) > int.Parse(votePercents [1].ToString())) {
+		string finalString = voteArray [0].ToString().Substring (0, voteArray [0].ToString().IndexOf ("(") - 1);
+		int finalIndex = 0;
+		Debug.Log ("voteArray.Count = " + voteArray.Count);
+		if (finalString.Contains ("Invalid") && voteArray.Count > 1) {
+			Debug.Log ("voteArray[1] = " + voteArray [1].ToString ());
+			finalString = voteArray [1].ToString().Substring (0, voteArray [1].ToString().IndexOf ("(") - 1);
+			finalIndex = 1;
+		}
+		if ( !finalString.Contains("Invalid") && (votePercents.Count == 1+finalIndex || int.Parse(votePercents [finalIndex].ToString()) > int.Parse(votePercents [finalIndex+1].ToString()))) {
 			// Vote succeeds.
 			Debug.Log("Vote succeeds.");
-			finalString = voteArray [0].ToString().Substring (0, voteArray [0].ToString().IndexOf ("(") - 1);
+			IRC.SendMsg("Vote succeeds. Let's do '" +finalString + "'.");
 		} else {
 			Debug.Log ("Vote fails.");
 			// Tie, vote failed.
@@ -97,7 +104,7 @@ public class TwitchIrcListener : MonoBehaviour {
 				finalString = chosenUserVote;
 			} else {
 				finalString = voteOptions [UnityEngine.Random.Range (0, voteOptions.Length)];
-				IRC.SendMsg ("Vote failed? Let's move " + finalString + " then.");
+				IRC.SendMsg ("Vote failed? Let's do '" + finalString + "' then.");
 			}
 		}
 		Debug.Log (finalString);
@@ -119,7 +126,7 @@ public class TwitchIrcListener : MonoBehaviour {
 		foreach (string vote in voteOptions) {
 			votes = votes + " " + vote;
 		}
-		IRC.SendMsg ("!moobot poll open up, down, left, right");
+		IRC.SendMsg ("!moobot poll open w, s, a, d");
 		InvokeRepeating ("PollResults", timer, timer);
 	} //End.Start()
 
@@ -160,19 +167,19 @@ public class TwitchIrcListener : MonoBehaviour {
 	void ExecuteCommand(string finalString) {
 		Debug.Log ("finalString: " + finalString);
 		switch (finalString.ToLower()) {
-		case "up":
+		case "w":
 			cultist.MoveUp ();
 			PollReset ();
 			break;
-		case "down":
+		case "s":
 			cultist.MoveDown ();
 			PollReset ();
 			break;
-		case "left":
+		case "a":
 			cultist.MoveLeft ();
 			PollReset ();
 			break;
-		case "right":
+		case "d":
 			cultist.MoveRight ();
 			PollReset ();
 			break;
