@@ -18,9 +18,6 @@ namespace Cultist
 		//Protected, virtual functions can be overridden by inheriting classes.
 		protected virtual void Start ()
 		{
-
-            Debug.Log("At least one moving object");
-
 			//Get a component reference to this object's BoxCollider2D
 			boxCollider = GetComponent <BoxCollider2D> ();
 			
