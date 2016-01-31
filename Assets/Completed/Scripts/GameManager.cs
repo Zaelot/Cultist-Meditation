@@ -10,6 +10,17 @@ namespace Completed
 	using System.Collections.Generic;		//Allows us to use Lists. 
 	using UnityEngine.UI;					//Allows us to use UI.
 	using UnityEngine.SceneManagement;		//~Z 16.01.30 | Allows the use of SceneManager
+
+
+	public enum Ritual { //Goals
+		None,
+
+		PrayOnAltar,
+		BargainWithAncient,
+		CleanseDungeon,
+		SummonMinions,
+		MapDungeon
+	}//Ritual{} - enum
 	
 	public class GameManager : MonoBehaviour
 	{
@@ -34,6 +45,8 @@ namespace Completed
 		private List<Enemy> enemies3;
 		private List<Enemy> enemies4;
 		private List<Enemy> enemies5;
+
+		private Ritual currentRitual = Ritual.None;
 		
 		
 		//Awake is always called before any Start functions ~Z 16.01.30 | Not 100% clear whether this is done on each Scene reload?
@@ -72,12 +85,40 @@ namespace Completed
 		{
 			Debug.Log ("Changed level, incrementing: " + level);
 			//~Z 16.01.30 | if on second playthrough, reset level count and skip building the level
-			if ( SceneManager.GetActiveScene ().name == "HomeApartment" ) {
+			if (SceneManager.GetActiveScene ().name == "HomeApartment") {
 				level = 0;
 				doingSetup = true; //~Z 16.01.30 | don't attempt enemy movement while in start menu
 				return;
-			}
-				
+			} else if (SceneManager.GetActiveScene ().name == "Level_1") {
+				switch (currentRitual) {
+				case Ritual.None:
+					Debug.LogWarning ("Transcendendant!"); //cheat/error
+					break;
+				case Ritual.PrayOnAltar:
+					Debug.Log ("Ritual of Desire");
+					//TODO ~Z 16.01.30 | Dog?
+					break;
+				case Ritual.BargainWithAncient:
+					Debug.Log ("Ritual of Power");
+					//TODO ~Z 16.01.30 | ?
+					break;
+				case Ritual.CleanseDungeon:
+					Debug.Log ("Ritual of Blood");
+					//TODO ~Z 16.01.30 | Crowbar
+					break;
+				case Ritual.SummonMinions:
+					Debug.Log ("Ritual of Rulership");
+					//TODO ~Z 16.01.30 | Dagger?
+					break;
+				case Ritual.MapDungeon:
+					Debug.Log ("Ritual of Knowledge");
+					//TODO ~Z 16.01.30 | Smartphone and map
+					break;
+				default:
+					Debug.Log ("Ritual unclear.");
+					break;
+				}//end.switch(ritual)
+			}//end.else if (First level)
 			//Add one to our level number.
 			level++;
 			//Call InitGame to initialize our level.
@@ -88,6 +129,12 @@ namespace Completed
 		void InitGame()
 		{
 			string levelName = SceneManager.GetActiveScene ().name;
+			if ( levelName == "HomeApartment" ) {
+				level = 1;
+				//doingSetup = true; //~Z 16.01.30 | don't attempt enemy movement while in start menu
+				return;
+			}
+
 			//While doingSetup is true the player can't move, prevent player from moving while title card is up.
 			doingSetup = true;
 			
@@ -206,12 +253,28 @@ namespace Completed
 
 		//~Z 16.01.31 | switch between scenes
 		public void ChangeLevel () {
+			//TODO ~Z 16.01.31 | Should we just make the default choise?
+			if ( SceneManager.GetActiveScene ().name == "HomeApartment" && currentRitual == Ritual.None ) {
+//				if (currentRitual == Ritual.None) {
+					Debug.LogWarning ("Choose a ritual!");
+					return;
+//				} //Don't need extra layer as there's nothing to choose as else
+			}//end.if(home)
+				
+
 			Debug.Log ("Level: " + level);
 			if (level >= 6) //if we're at the end, go to start menu
 				level = 0;
 			Debug.Log ( "Changing scene to: " + level ); //somehow constantly 0
 			SceneManager.LoadScene (level);
 		} //End.ChangeLeveL()
+
+		public void SetRitual( int ritual ) {
+			currentRitual = (Ritual)ritual;
+			//TODO ~Z 16.01.31 | Change ritual description text
+			Debug.Log( currentRitual );
+		} //End.SetRitual()
+
 	} //End.GameManager{}
 } //End.Completed{} - namespace
 
