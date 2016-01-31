@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class TwitchIRC : MonoBehaviour
 {
-	public TextAsset oauthTxt = (TextAsset)Resources.Load("oauth", typeof(TextAsset));
+	public TextAsset oauthTxt;
 	public string oauth = ""; //Automatically read via Assets/oauth.txt
     public string nickName = "cultistmeditationbot";
     public string channelName = "cultistmeditationbot";
@@ -122,6 +122,7 @@ public class TwitchIRC : MonoBehaviour
     //MonoBehaviour Events.
     void Start()
     {
+		oauthTxt = (TextAsset)Resources.Load("oauth", typeof(TextAsset));
 		oauth = oauthTxt.text;
 	} //End.Start()
     void OnEnable()
