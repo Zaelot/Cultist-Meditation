@@ -12,7 +12,7 @@ public class TwitchIrcListener : MonoBehaviour {
 	private Cultist cultist;
 	private TwitchIRC IRC;
 	public string[] voteOptions = new string[] { "up", "down", "left", "right" };
-	public float timer = 15.0f;
+	public float timer = 30.0f;
 	//when message is recieved from IRC-server or our own message.
 	void OnChatMsgReceived(string msg)
 	{
@@ -76,15 +76,17 @@ public class TwitchIrcListener : MonoBehaviour {
 		}//end.while(%)
 		// Make array of percent values to check if there is a successful vote
 		ArrayList votePercents = new ArrayList();
+		int startIndex;
+		int endIndex;
 		for (int i = 0; i < voteArray.Count; i++) {
-			int startIndex = voteArray [i].ToString ().IndexOf ("(");
-			int endIndex = voteArray [i].ToString ().IndexOf ("%")-1;
+			startIndex = voteArray [i].ToString ().IndexOf ("(");
+			endIndex = voteArray [i].ToString ().IndexOf ("%")-1;
 			votePercents.Add(voteArray[i].ToString().Substring (startIndex + 1, endIndex - startIndex));
 		}
 
 		// Check if vote succeeds
 		string finalString = "";
-		if (votePercents.Count == 1 || (int)votePercents [0] > (int)votePercents [1]) {
+		if (votePercents.Count == 1 || int.Parse(votePercents [0].ToString()) > int.Parse(votePercents [1].ToString())) {
 			// Vote succeeds.
 			Debug.Log("Vote succeeds.");
 			finalString = voteArray [0].ToString().Substring (0, voteArray [0].ToString().IndexOf ("(") - 1);
