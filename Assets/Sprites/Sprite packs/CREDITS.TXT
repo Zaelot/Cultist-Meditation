@@ -1,0 +1,1880 @@
+###############################################
+OpenGameArt.org automatically generated credits file notice:
+
+THIS FILE IS FOR INFORMATIONAL PURPOSES ONLY.  NO WARRANTY OF ANY KIND IS EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL OPENGAMEART.ORG BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE USE OF THIS FILE OR THE INFORMATION IN IT.
+
+In plain English:  This credits file is automatically generated to the best of our ability, but it remains YOUR RESPONSIBILITY as a game developer to ensure that the art you use is attributed properly.  That is, we can't be held liable even if all of the information in this file is completely wrong.   In addition, some of the art listed in this file may have SPECIAL ATTRIBUTION INSTRUCTIONS that ask that you credit the artist in a particular way, rather than a verbatim copyright notice.  In those cases, you will probably need to hand-edit this file to comply with their instructions.  In some older art, attribution instructions may be included in the art description itself.  Please check the art page to be sure.
+
+We recommend that you delete this notice when you're sure the information here is correct and the attribution instructions are properly followed.  If you aren't the game developer and you're seeing this notice here in the credits, it probably means that the developer hasn't properly verified the attribution information contained herein even though it said they were supposed to do it right on the page where they downloaded this file.  
+###############################################
+
+Title:
+    2d lost Garden tileset transition to Jetrel&#039;s Wood tileset
+
+Author:
+    Jetrel, Daniel Cook, Zabin
+
+URL:
+    http://opengameart.org/content/2d-lost-garden-tileset-transition-to-jetrels-wood-tileset
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Credit goes to Jetrel, Daniel Cook, Bertram and Zabin
+
+File(s):
+    * wood_tileset.png
+
+----------------------------------------
+
+Title:
+    2d Lost Garden Zelda style tiles winter theme with additions
+
+Author:
+    Daniel Cook, yd, Jetrel, Zabin
+
+URL:
+    http://opengameart.org/content/2d-lost-garden-zelda-style-tiles-winter-theme-with-additions
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Daniel Cook, Jetrel, yd, and Zabin.
+
+File(s):
+    * snowWIP.png
+
+----------------------------------------
+
+Title:
+    2d Lost Garden Zelda style tiles resized to 32x32 with additions
+
+Author:
+    Daniel Cook, Jetrel, Saphy (TMW), Zabin, Bertram
+
+Collaborators:
+    Jetrel, Bertram
+
+URL:
+    http://opengameart.org/content/2d-lost-garden-zelda-style-tiles-resized-to-32x32-with-additions
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Credit goes to Daniel Cook&#039;s 2d Circle Graphic Archive, Jetrel&#039;s mockups resized 32x32, Bertram&#039;s improvements, Zabin&#039;s modification and additions, Saphy (TMW) tall grass and please provide a link back to OGA and this submission.
+
+
+File(s):
+    * mountain_landscape.png
+
+----------------------------------------
+
+Title:
+    Whispers of Avalon: Grassland Tileset
+
+Author:
+    Leonard Pabin
+
+URL:
+    http://opengameart.org/content/whispers-of-avalon-grassland-tileset
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+File(s):
+    * ground_tiles.png
+    * Cliff_tileset.png
+    * object- layer.png
+    * treesv6_0.psd
+    * graphics-tiles-waterflow.png
+    * Extra_Unfinished4.png
+
+----------------------------------------
+
+Title:
+    Whispers of Avalon: Desert Tileset
+
+Author:
+    Leonard pabin, Ali-G
+
+URL:
+    http://opengameart.org/content/whispers-of-avalon-desert-tileset
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+File(s):
+    * desert_1_0_7.png
+
+----------------------------------------
+
+Title:
+    Mage City Arcanos
+
+Author:
+    Hyptosis
+
+URL:
+    http://opengameart.org/content/mage-city-arcanos
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Feel free to use it for anything, you can even make profit. If you want please give me credit for the tile though as &#039;Hyptosis&#039; or link to www.lorestrome.com if you want. But you&#039;re not obligated to. Everyone should be able to make games, I hope these help.
+
+File(s):
+    * magecity.png
+
+----------------------------------------
+
+Title:
+    Lots of free 2d tiles and sprites by Hyptosis
+
+Author:
+    Hyptosis
+
+Collaborators:
+    Zabin
+
+URL:
+    http://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Please credit Hyptosis and Zabin (only drew 6 frames of the bomb&#039;s wick burning) from OGA and respect to the License.
+
+File(s):
+    * hyptosis_tile-art-batch-1.png
+    * hyptosis_til-art-batch-2.png
+    * hyptosis_tile-art-batch-3.png
+    * hyptosis_tile-art-batch-4.png
+    * hyptosis_tile-art-batch-5.png
+    * hyptosis_sprites-and-tiles-for-you.png
+    * BombExploding.png
+
+----------------------------------------
+
+Title:
+    RPG Tiles: Cobble stone paths & town objects
+
+Author:
+    Zabin, Daneeklu, Jetrel, Hyptosis, Redshrike, Bertram
+
+Collaborators:
+    daneeklu, Jetrel, Hyptosis, Redshrike, Bertram
+
+URL:
+    http://opengameart.org/content/rpg-tiles-cobble-stone-paths-town-objects
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Credit goes to:  Zabin, Daneeklu, Jetrel, Hyptosis, Redshrike, Bertram.  A link back to this page "http://opengameart.org/content/rpg-tiles-cobble-stone-paths-town-objects to see who did what"
+
+File(s):
+    * PathAndObjects.png
+    * Artistinfo2.png
+
+----------------------------------------
+
+Title:
+    Castle Tiles for RPG&#039;s
+
+Author:
+    Hyptosis, Zabin, Daniel Cook
+
+URL:
+    http://opengameart.org/content/castle-tiles-for-rpgs
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Zabin, Hyptosis, and Danial Cook and a link back to www.OpenGameart.org
+
+File(s):
+    * Castle.png
+    * CastleExample.png
+    * ArtistInfo.png
+    * Castle2.png
+
+----------------------------------------
+
+Title:
+    Lots of Hyptosis&#039; tiles organized!
+
+Author:
+    Hyptosis
+
+Collaborators:
+    Hyptosis
+
+URL:
+    http://opengameart.org/content/lots-of-hyptosis-tiles-organized
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Credit Hyptosis and respect to the license.
+
+File(s):
+    * trees.png
+    * trees_plants.png
+    * trees_plants_rocks.png
+    * town.png
+
+----------------------------------------
+
+Title:
+    Tiled Terrains
+
+Author:
+    Multiple
+
+URL:
+    http://opengameart.org/content/tiled-terrains
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Read the Attribution.txt
+
+File(s):
+    * LPC_Terrain.zip
+
+----------------------------------------
+
+Title:
+    Spooky Castle Tileset
+
+Author:
+    Buch
+
+URL:
+    http://opengameart.org/content/spooky-castle-tileset
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Credit me as Buch and link back either to my OGA profile page or to http://blog-buch.rhcloud.com
+
+File(s):
+    * oppcastle-mod-tiles.png
+    * oppcastle-tiles.png
+
+----------------------------------------
+
+Title:
+    Sci-fi platform tiles
+
+Author:
+    Eris
+
+URL:
+    http://opengameart.org/content/sci-fi-platform-tiles
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * scifi_platformTiles_16x16.png
+    * scifi_platformTiles_32x32.png
+    * scifi_platform_BG1.jpg
+
+----------------------------------------
+
+Title:
+    Sci-Fi Scidescroller Tiles
+
+Author:
+    surt
+
+URL:
+    http://opengameart.org/content/sci-fi-scidescroller-tiles
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+File(s):
+    * scifi_sidescroller_tiles.png
+
+----------------------------------------
+
+Title:
+    Platform tileset nature
+
+Author:
+    Eris
+
+URL:
+    http://opengameart.org/content/platform-tileset-nature
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    I would like to see the assets in use, but it is not mandatory. Post a link here if you like.
+
+File(s):
+    * PlatformTiles_brownNature_ByEris.zip
+
+----------------------------------------
+
+Title:
+    pixel art castle tileset
+
+Author:
+    rubberduck
+
+URL:
+    http://opengameart.org/content/pixel-art-castle-tileset
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * castle_tileset_part1.png
+    * castle_tileset_part2.png
+    * castle_tileset_part3.png
+
+----------------------------------------
+
+Title:
+    DawnLike - 16x16 Universal Rogue-like tileset v1.81
+
+Author:
+    DragonDePlatino
+
+URL:
+    http://opengameart.org/content/dawnlike-16x16-universal-rogue-like-tileset-v181
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    If you use this tileset you must accredit DawnBringer. That mad color-bending genius came up with the palette this entire pack lives on. Without his palette, I would probably never would have even finished DawnHack.
+
+File(s):
+    * DawnLike.zip
+
+----------------------------------------
+
+Title:
+    Dungeon tileset
+
+Author:
+    Buch
+
+URL:
+    http://opengameart.org/content/dungeon-tileset
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    NOT REQUIRED, though appreciated: credit me as Buch and link back either to my OGA profile page or to http://blog-buch.rhcloud.com
+
+File(s):
+    * dungeon_tiles.png
+
+----------------------------------------
+
+Title:
+    Dungeon Tileset
+
+Author:
+    Calciumtrice
+
+URL:
+    http://opengameart.org/content/dungeon-tileset-1
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    Dungeon tileset by Calciumtrice, usable under Creative Commons Attribution 3.0 license.
+
+File(s):
+    * dungeon tileset calciumtrice.png
+    * dungeon tileset calciumtrice simple.png
+    * dungeon tileset by calciumtrice.zip
+
+----------------------------------------
+
+Title:
+    16x16 Sidescroller Tileset
+
+Author:
+    Delfos
+
+URL:
+    http://opengameart.org/content/16x16-sidescroller-tileset
+
+License(s):
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * CdH_TILES.png
+
+----------------------------------------
+
+Title:
+    low-pixel school tileset and objects etc. (16x16px)
+
+Author:
+    Lasse Öörni, Olli Niemitalo (BOFH graphics team)
+
+URL:
+    http://opengameart.org/content/low-pixel-school-tileset-and-objects-etc-16x16px
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+File(s):
+    * bofhtileandobjects.7z
+
+----------------------------------------
+
+Title:
+    Roguelike/RPG pack (1,700+ tiles)
+
+Author:
+    Kenney
+
+URL:
+    http://opengameart.org/content/roguelikerpg-pack-1700-tiles
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+Copyright/Attribution Notice:
+    Credit "Kenney.nl" or "www.kenney.nl", this is not mandatory.
+
+File(s):
+    * Roguelike pack.zip
+
+----------------------------------------
+
+Title:
+    RPG pack: base set
+
+Author:
+    Kenney
+
+URL:
+    http://opengameart.org/content/rpg-pack-base-set
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+Copyright/Attribution Notice:
+    Credit "Kenney.nl" or "www.kenney.nl", this is not mandatory.
+
+File(s):
+    * KenneyRPGpack.zip
+
+----------------------------------------
+
+Title:
+    Platformer Pack Redux (360 assets)
+
+Author:
+    Kenney
+
+URL:
+    http://opengameart.org/content/platformer-pack-redux-360-assets
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+Copyright/Attribution Notice:
+    Credit "Kenney.nl" or "www.kenney.nl", this is not mandatory.
+
+File(s):
+    * Platformer Pack Redux (360 assets).zip
+
+----------------------------------------
+
+Title:
+    Platformer Art: Extended tilesets
+
+Author:
+    Kenney
+
+URL:
+    http://opengameart.org/content/platformer-art-extended-tilesets
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+Copyright/Attribution Notice:
+    Credit "Kenney.nl" or "www.kenney.nl", this is not mandatory.
+
+File(s):
+    * platformer_extendedTiles.zip
+
+----------------------------------------
+
+Title:
+    Platformer Art: Pixel Redux
+
+Author:
+    Kenney
+
+URL:
+    http://opengameart.org/content/platformer-art-pixel-redux
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Credit "Kenney.nl" or "www.kenney.nl", this is not mandatory.
+
+File(s):
+    * Platformer Art Pixel Redux.zip
+
+----------------------------------------
+
+Title:
+    Platformer Art Complete Pack (often updated)
+
+Author:
+    Kenney
+
+URL:
+    http://opengameart.org/content/platformer-art-complete-pack-often-updated
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Credit "Kenney.nl" or "www.kenney.nl", this is not mandatory.
+
+File(s):
+    * Platformer Art Complete Pack.zip
+
+----------------------------------------
+
+Title:
+    Platformer Art: More animations and enemies
+
+Author:
+    Kenney
+
+URL:
+    http://opengameart.org/content/platformer-art-more-animations-and-enemies
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Credit "Kenney.nl" or "www.kenney.nl", this is not mandatory.
+
+File(s):
+    * moreEnemiesAnimations.zip
+
+----------------------------------------
+
+Title:
+    Platformer Art: Request Pack
+
+Author:
+    Kenney
+
+URL:
+    http://opengameart.org/content/platformer-art-request-pack
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Credit "Kenney.nl" or "www.kenney.nl", this is not mandatory.
+
+File(s):
+    * platformerGraphics_requestPack.zip
+
+----------------------------------------
+
+Title:
+    Platformer Art: Buildings
+
+Author:
+    Kenney
+
+URL:
+    http://opengameart.org/content/platformer-art-buildings
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Credit "Kenney.nl" or "www.kenney.nl", this is not mandatory.
+
+File(s):
+    * platformerGraphics_buildings.zip
+
+----------------------------------------
+
+Title:
+    Platformer Art: Candy Caverns
+
+Author:
+    Kenney
+
+URL:
+    http://opengameart.org/content/platformer-art-candy-caverns
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Credit "Kenney.nl" or "www.kenney.nl", this is not mandatory.
+
+File(s):
+    * platformerGraphics_candyCaverns.zip
+
+----------------------------------------
+
+Title:
+    Platformer Art: Ice World
+
+Author:
+    Kenney
+
+URL:
+    http://opengameart.org/content/platformer-art-ice-world
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Credit "Kenney.nl" or "www.kenney.nl", this is not mandatory.
+
+File(s):
+    * platformerGraphics_iceWorld.zip
+
+----------------------------------------
+
+Title:
+    Platformer Art: Pixel edition
+
+Author:
+    Kenney
+
+URL:
+    http://opengameart.org/content/platformer-art-pixel-edition
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Credit "Kenney.nl" or "www.kenney.nl", this is not mandatory.
+
+File(s):
+    * Platformer Art Deluxe (Pixel).zip
+
+----------------------------------------
+
+Title:
+    Platformer Art: Mushroom Land
+
+Author:
+    Kenney
+
+URL:
+    http://opengameart.org/content/platformer-art-mushroom-land
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Credit "Kenney.nl" or "www.kenney.nl", this is not mandatory.
+
+File(s):
+    * platformerGraphics_mushroomLand.zip
+
+----------------------------------------
+
+Title:
+    Platformer Art: Ice World
+
+Author:
+    Kenney
+
+URL:
+    http://opengameart.org/content/platformer-art-ice-world
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Credit "Kenney.nl" or "www.kenney.nl", this is not mandatory.
+
+File(s):
+    * platformerGraphics_iceWorld.zip
+
+----------------------------------------
+
+Title:
+    Platformer Art Deluxe
+
+Author:
+    Kenney
+
+URL:
+    http://opengameart.org/content/platformer-art-deluxe
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Credit "Kenney.nl" or "www.kenney.nl", this is not mandatory.
+
+File(s):
+    * platformerGraphicsDeluxe_Updated.zip
+
+----------------------------------------
+
+Title:
+    Platformer Bricks
+
+Author:
+    Kenney
+
+URL:
+    http://opengameart.org/content/platformer-bricks
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Credit "Kenney.nl" or "www.kenney.nl", this is not mandatory.
+
+File(s):
+    * platformerBricks_Kenney.zip
+
+----------------------------------------
+
+Title:
+    Kenney 16x16
+
+Author:
+    surt
+
+Collaborators:
+    Kenney
+
+URL:
+    http://opengameart.org/content/kenney-16x16
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * kenney_16x16.png
+
+----------------------------------------
+
+Title:
+    Road and water tiles (from isometric set)
+
+Author:
+    Kenney
+
+URL:
+    http://opengameart.org/content/road-and-water-tiles-from-isometric-set
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Credit "Kenney.nl" or "www.kenney.nl", this is not mandatory.
+
+File(s):
+    * roadTiles_textures.zip
+
+----------------------------------------
+
+Title:
+    Dungeon Crawl 32x32 tiles
+
+Author:
+    Chris Hamons (maintainer)
+
+URL:
+    http://opengameart.org/content/dungeon-crawl-32x32-tiles
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    You can use these tilesets in your program freely. No attribution is required. As a courtesy, you may include the following text* in your distribution package, either as a separate file or incorporated into your license notice document. The "yourname" line is optional; Delete it if you have not modified the tiles. If you have modified some of the tiles, replace "YOURNAME" by your name:
+
+*"Part of (or All) the graphic tiles used in this program is the
+Public domain roguelike tileset "RLTiles". 
+Some of the tiles have been modified by YOURNAME.
+
+You can find the original tileset at:
+http://rltiles.sf.net
+
+You can find Dungeon Crawl Stone Soup modified tilesets at:
+http://code.google.com/p/crawl-tiles/downloads/list"
+
+File(s):
+    * crawl-tiles Oct-5-2010.zip
+    * DungeonCrawl_ProjectUtumnoTileset.png
+
+----------------------------------------
+
+Title:
+    Platformer tiles
+
+Author:
+    Buch
+
+URL:
+    http://opengameart.org/content/platformer-tiles-4
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    Credit me as Buch and link back either to my OGA profile page or to http://blog-buch.rhcloud.com, and credit Jeffrey Kern as the committer and creative consultant
+
+File(s):
+    * phase-2.png
+
+----------------------------------------
+
+Title:
+    Lo-res 2D platformer graphics
+
+Author:
+    IMakeGames
+
+URL:
+    http://opengameart.org/content/lo-res-2d-platformer-graphics
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+File(s):
+    * platformer_graphics_IMakeGames.zip
+
+----------------------------------------
+
+Title:
+    LPC Tile Atlas
+
+Author:
+    See Attribution.txt
+
+URL:
+    http://opengameart.org/content/lpc-tile-atlas
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    The zip contains a nifty attribution file so you can drop it and forget.
+
+File(s):
+    * Atlas.zip
+
+----------------------------------------
+
+Title:
+    LPC Tile Atlas2
+
+Author:
+    See Attribution.txt
+
+URL:
+    http://opengameart.org/content/lpc-tile-atlas2
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    The zip contains a nifty attribution file so you can drop it and forget.
+
+File(s):
+    * Atlas2.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Farming tilesets, magic animations and UI elements
+
+Author:
+    daneeklu
+
+URL:
+    http://opengameart.org/content/lpc-farming-tilesets-magic-animations-and-ui-elements
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Please attribute creator as Daniel Eddeland.
+
+Please include a link to opengameart.org as well (preferably to the submission for this art package) if you use the art.
+
+
+File(s):
+    * lpc_daneeklu.tar_.gz
+
+----------------------------------------
+
+Title:
+    [LPC] A shoot&#039;em up complete graphic kit
+
+Author:
+    Johann C
+
+URL:
+    http://opengameart.org/content/lpc-a-shootem-up-complete-graphic-kit
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+File(s):
+    * shootemup.tar_.gz
+
+----------------------------------------
+
+Title:
+    16x16 Fantasy tileset
+
+Author:
+    Jerom
+
+URL:
+    http://opengameart.org/content/16x16-fantasy-tileset
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+File(s):
+    * 16x16_Jerom_CC-BY-SA-3.0.png
+
+----------------------------------------
+
+Title:
+    Tiny 16: Basic
+
+Author:
+    Sharm
+
+URL:
+    http://opengameart.org/content/tiny-16-basic
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Please credit Lanea Zimmerman.  The anti-DRM clause of CC-BY 3.0 is waved.
+
+File(s):
+    * fontlarge.png
+    * fontsmall1.gif
+    * fontsmall2.gif
+    * characters.png
+    * things.png
+    * dead.png
+    * basictiles.png
+
+----------------------------------------
+
+Title:
+    OpenPixels:Characters & Tilesets -Silveira Neto
+
+Author:
+    Silveira Neto
+
+URL:
+    http://opengameart.org/content/openpixelscharacters-tilesets-silveira-neto
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Silveira Neto, Silveira Neto Blog:
+http://silveiraneto.net/2011/08/20/getting-openpixels/
+https://github.com/silveira/openpixels
+
+
+
+File(s):
+    * openpixels-master.zip
+
+----------------------------------------
+
+Title:
+    Pixel land 1.5
+
+Author:
+    pixel32
+
+URL:
+    http://opengameart.org/content/pixel-land-15
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * pixeland.PNG
+
+----------------------------------------
+
+Title:
+    Consolidated Hard Vacuum Terrain Tilesets
+
+Author:
+    Daniel Cook
+
+URL:
+    http://opengameart.org/content/consolidated-hard-vacuum-terrain-tilesets
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Attribute to:
+"Hard Vacuum" art by Daniel Cook (Lostgarden.com)
+
+File(s):
+    * sum.png
+    * overlays.png
+
+----------------------------------------
+
+Title:
+    Dawn of the Gods
+
+Author:
+    surt
+
+URL:
+    http://opengameart.org/content/dawn-of-the-gods
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+File(s):
+    * dawn_of_the_gods.png
+
+----------------------------------------
+
+Title:
+    Classical Ruin Tiles
+
+Author:
+    surt
+
+URL:
+    http://opengameart.org/content/classical-ruin-tiles
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+File(s):
+    * classical_ruin_tiles.png
+
+----------------------------------------
+
+Title:
+    BrowserQuest Sprites and Tiles
+
+Author:
+    Guillaume Lecollinet
+
+URL:
+    http://opengameart.org/content/browserquest-sprites-and-tiles
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+File(s):
+    * browserquest-images.7z
+    * browserquest-sprites.7z
+
+----------------------------------------
+
+Title:
+    Plastic Shamtastic
+
+Author:
+    surt
+
+URL:
+    http://opengameart.org/content/plastic-shamtastic
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+File(s):
+    * plastic_shamtastic.png
+    * plastic_shamtastic_alt_palette.png
+
+----------------------------------------
+
+Title:
+    Simple broad-purpose tileset
+
+Author:
+    surt
+
+Collaborators:
+    Sharm, vk
+
+URL:
+    http://opengameart.org/content/simple-broad-purpose-tileset
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * simples_pimples.png
+
+----------------------------------------
+
+Title:
+    Blowhard 2: Blow Harder
+
+Author:
+    surt
+
+URL:
+    http://opengameart.org/content/blowhard-2-blow-harder
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * blowharder.png
+
+----------------------------------------
+
+Title:
+    Generic Platformer Tiles
+
+Author:
+    surt
+
+URL:
+    http://opengameart.org/content/generic-platformer-tiles
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * generic_platformer_tiles.png
+
+----------------------------------------
+
+Title:
+    16x16 indoor rpg tileset: the baseline
+
+Author:
+    Stephen Challener (Redshrike)
+
+Collaborators:
+    bart
+
+URL:
+    http://opengameart.org/content/16x16-indoor-rpg-tileset-the-baseline
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+Copyright/Attribution Notice:
+    Art by Stephen Challener (Redshrike). Commissioned by OpenGameArt.org (http://opengameart.org)
+
+File(s):
+    * tilesetformattedupdate1.png
+    * 16x16extratiles.PNG
+
+----------------------------------------
+
+Title:
+    RPG Indoor Tileset:  Expansion 1
+
+Author:
+    Redshrike
+
+Collaborators:
+    Jetrel
+
+URL:
+    http://opengameart.org/content/rpg-indoor-tileset-expansion-1
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+Copyright/Attribution Notice:
+    Stephen Challener (Redshrike) and Jetrel, hosted by OpenGameArt.org
+
+File(s):
+    * rpg indoor tileset expansion 1 trans.png
+
+----------------------------------------
+
+Title:
+    Mystery Forest Tile Set
+
+Author:
+    Azoris
+
+URL:
+    http://opengameart.org/content/mystery-forest-tile-set
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+File(s):
+    * mystery_forest_promo.jpg
+    * genetica_texture_pack_10_-_mystery_forest.zip
+
+----------------------------------------
+
+Title:
+    old frogatto tile art
+
+Author:
+    Guido Bos
+
+URL:
+    http://opengameart.org/content/old-frogatto-tile-art
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * dirt-tiles.png
+
+----------------------------------------
+
+Title:
+    RPG Tiles — Forest / Meadows / Outdoor
+
+Author:
+    Andrew J Hamilton
+
+URL:
+    http://opengameart.org/content/rpg-tiles-%E2%80%94-forest-meadows-outdoor
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+Copyright/Attribution Notice:
+    RPG Tiles — Forest / Meadows / Outdoor by Andrew J Hamilton
+
+File(s):
+    * 8x8 pixel tiles.png
+
+----------------------------------------
+
+Title:
+    Open Pixel Platformer Tiles & Sprites
+
+Author:
+    Hapiel
+
+URL:
+    http://opengameart.org/content/open-pixel-platformer-tiles-sprites
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+File(s):
+    * OPP Assets.zip
+
+----------------------------------------
+
+Title:
+    OPP Jungle Tiles
+
+Author:
+    Hapiel
+
+URL:
+    http://opengameart.org/content/opp-jungle-tiles
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    All contributors must be credited. Find a list of all contributors here:
+http://opp.opengameart.org/index.php/Contributors
+
+File(s):
+    * Jungle_guide.png
+    * Jungle_terrain.png
+    * objects.PNG
+
+----------------------------------------
+
+Title:
+    Lemcraft
+
+Author:
+    richtaur
+
+URL:
+    http://opengameart.org/content/lemcraft
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    by Matt Hackett of Lost Decade Games
+
+File(s):
+    * bg_snowy.png
+    * bg_sunflowers.png
+    * gore.png
+    * guinea_pig.png
+    * heart.png
+    * icon_114x114.png
+    * skull.png
+    * tiles.png
+    * title_screen.png
+    * audio_button_off.png
+    * audio_button_on.png
+    * button.png
+    * ff_button_off.png
+    * ff_button_on.png
+    * level_button.png
+    * menu_button.png
+    * modal_tutorial_down.png
+    * modal_tutorial_right.png
+    * modal_tutorial_up.png
+    * modal_tutorial.png
+    * selected_material.png
+    * lc.7z
+
+----------------------------------------
+
+Title:
+    castle platformer
+
+Author:
+    Jetrel
+
+URL:
+    http://opengameart.org/content/castle-platformer
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * working-title-assets.zip
+
+----------------------------------------
+
+Title:
+    16x16 Overworld Tiles
+
+Author:
+    Sharm
+
+URL:
+    http://opengameart.org/content/16x16-overworld-tiles
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+File(s):
+    * set.gif
+
+----------------------------------------
+
+Title:
+    16x16 Forest Tiles
+
+Author:
+    Sharm
+
+Collaborators:
+    surt, MrBeast
+
+URL:
+    http://opengameart.org/content/16x16-forest-tiles
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+File(s):
+    * foresttiles.gif
+
+----------------------------------------
+
+Title:
+    Town Tiles
+
+Author:
+    surt
+
+URL:
+    http://opengameart.org/content/town-tiles
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * town_tiles.png
+
+----------------------------------------
+
+Title:
+    16x16 Snowy Town Tiles
+
+Author:
+    Sharm
+
+Collaborators:
+    surt
+
+URL:
+    http://opengameart.org/content/16x16-snowy-town-tiles
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+File(s):
+    * snowtiles.gif
+
+----------------------------------------
+
+Title:
+    Desert Tileset
+
+Author:
+    MrBeast
+
+URL:
+    http://opengameart.org/content/desert-tileset-0
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    Art by MrBeast. Commissioned by OpenGameArt.org (http://opengameart.org)
+
+File(s):
+    * desert.png
+
+----------------------------------------
+
+Title:
+    Tiles: Sands
+
+Author:
+    yd
+
+URL:
+    http://opengameart.org/content/tiles-sands
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * sands_contrast.xcf
+    * terrain_base_ortho2.blend
+
+----------------------------------------
+
+Title:
+    Race Track Tiles
+
+Author:
+    TRBRY
+
+URL:
+    http://opengameart.org/content/race-track-tiles-0
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+File(s):
+    * 192 racetrack Divided.svg
+    * 192-racetrack-isometric.svg
+
+----------------------------------------
+
+Title:
+    Race Track Tiles
+
+Author:
+    TRBRY
+
+URL:
+    http://opengameart.org/content/race-track-tiles
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+File(s):
+    * trackVersion3.svg
+
+----------------------------------------
+
+Title:
+    Track Tiles
+
+Author:
+    TRBRY
+
+URL:
+    http://opengameart.org/content/track-tiles
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+File(s):
+    * trackSVG.svg
+    * track2SVG.svg
+
+----------------------------------------
+
+Title:
+    Platformer sprites
+
+Author:
+    yd
+
+URL:
+    http://opengameart.org/content/platformer-sprites
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * SpritePack.zip
+
+----------------------------------------
+
+Title:
+    RPG Town Pixel Art Assets
+
+Author:
+    ansimuz
+
+URL:
+    http://opengameart.org/content/rpg-town-pixel-art-assets
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * town_rpg_pack.zip
+
+----------------------------------------
+
+Title:
+    Detailed Gloomy Set
+
+Author:
+    The Chayed - KIIRA
+
+URL:
+    http://opengameart.org/content/detailed-gloomy-set
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    KIIRA
+
+File(s):
+    * Gloomy Tileset.png
+
+----------------------------------------
+
+Title:
+    Roguelike Tiles (large collection)
+
+Author:
+    David E. Gervais
+
+URL:
+    http://opengameart.org/content/roguelike-tiles-large-collection
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+File(s):
+    * AngbandTk.zip
+    * DO Items.zip
+    * DO SysPics.zip
+    * DO Terrain.zip
+    * DO Monsters.zip
+    * DO More.zip
+    * Silmar.zip
+    * Work.zip
+
+----------------------------------------
+
+Title:
+    Roguelike Caves & Dungeons pack
+
+Author:
+    Kenney
+
+URL:
+    http://opengameart.org/content/roguelike-caves-dungeons-pack
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+Copyright/Attribution Notice:
+    Credit "Kenney.nl" or "www.kenney.nl", this is not mandatory.
+
+File(s):
+    * Roguelike Cave pack.zip
+
+----------------------------------------
+
+Title:
+    The Field of the Floating Islands
+
+Author:
+    Buch
+
+Collaborators:
+    usr_share, surt
+
+URL:
+    http://opengameart.org/content/the-field-of-the-floating-islands
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+Copyright/Attribution Notice:
+    NOT REQUIRED, though appreciated: credit me as Buch and link back either to my OGA profile page or to http://blog-buch.rhcloud.com
+
+File(s):
+    * tiles.png
+    * tiles_packed.png
+    * snow-expansion.png
+
+----------------------------------------
+
+Title:
+    8x8px tileset
+
+Author:
+    TearOfTheStar
+
+URL:
+    http://opengameart.org/content/8x8px-tileset
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    If you are using my pixels, give me a credit and shoot me a message here or at Twitter @TearOfTheStar.
+
+File(s):
+    * 8bitset.png
+    * 8bitset_p1.png
+
+----------------------------------------
+
+Title:
+    8x8px sand, cacti, scorpion tileset
+
+Author:
+    TearOfTheStar
+
+URL:
+    http://opengameart.org/content/8x8px-sand-cacti-scorpion-tileset
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    If you are using my pixels, give me a credit and shoot me a message here or at Twitter @TearOfTheStar.
+
+File(s):
+    * sand_tileset.png
+    * sand_tileset_p1.png
+
+----------------------------------------
+
+Title:
+    top down Road Tileset
+
+Author:
+    AdebGameSoft
+
+URL:
+    http://opengameart.org/content/top-down-road-tileset
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+Copyright/Attribution Notice:
+     royalty free for use in both personal and commercial projects.
+
+File(s):
+    * Road_test.png
+
+----------------------------------------
+
+Title:
+    Cave tiles-sprites
+
+Author:
+    chipmunk
+
+URL:
+    http://opengameart.org/content/cave-tiles-sprites
+
+License(s):
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+Copyright/Attribution Notice:
+    Give credit if used. 
+
+File(s):
+    * cave.png
+
+----------------------------------------
+
+Title:
+    [LPC] Dungeon Elements
+
+Author:
+    Sharm
+
+Collaborators:
+    Sharm
+
+URL:
+    http://opengameart.org/content/lpc-dungeon-elements
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Please link this page (if reasonable), attribute Sharm as graphic artist, and me as contributor. credit.txt included for convenience.
+
+File(s):
+    * dungeon.zip
+
+----------------------------------------
+
+Title:
+    LPC Animated Water and waterfalls
+
+Author:
+    ZaPaper
+
+URL:
+    http://opengameart.org/content/lpc-animated-water-and-waterfalls
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    Use the original LPC license and attribution.  Would be nice to also link to my RPG Game Maker.
+
+File(s):
+    * wateranimate2.png
+
+----------------------------------------
+
+Title:
+    Liberated Pixel Cup (LPC) Base Assets (sprites & map tiles)
+
+Author:
+    See CREDITS.TXT
+
+URL:
+    http://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Images are copyright their respective authors, as listed in CREDITS.TXT.  
+
+File(s):
+    * LPC Base Assets.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Forest tiles
+
+Author:
+    Reemax
+
+Collaborators:
+    Sharm, Hyptosis, Johann C, MrBeast, William.Thompsonj
+
+URL:
+    http://opengameart.org/content/lpc-forest-tiles
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+Copyright/Attribution Notice:
+    see credits.txt
+
+File(s):
+    * LPC_forest.zip
+
+----------------------------------------
+
+
