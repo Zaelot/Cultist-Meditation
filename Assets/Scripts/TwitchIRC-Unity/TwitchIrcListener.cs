@@ -11,7 +11,7 @@ public class TwitchIrcListener : MonoBehaviour {
 	public GameObject cultistGO;
 	private Cultist cultist;
 	private TwitchIRC IRC;
-	public string[] voteOptions;
+	public string[] voteOptions = new string[] { "up", "down", "left", "right" };
 	public float timer = 15.0f;
 	//when message is recieved from IRC-server or our own message.
 	void OnChatMsgReceived(string msg)
@@ -32,6 +32,12 @@ public class TwitchIrcListener : MonoBehaviour {
 				int lastIndex = msgString.IndexOf ("(");
 				chosenUser = msgString.Substring (10, lastIndex - 11);
 				Debug.Log ("Drew user: " + chosenUser);
+			}
+
+			if (msgString.Contains("Found no results")) {
+				string finalString = voteOptions [UnityEngine.Random.Range (0, voteOptions.Length)];
+				IRC.SendMsg ("Nobody voted? Let's move " + finalString + " then.");
+				ExecuteCommand(finalString);
 			}
 		}
 		if (user == chosenUser) {
@@ -85,38 +91,15 @@ public class TwitchIrcListener : MonoBehaviour {
 		} else {
 			Debug.Log ("Vote fails.");
 			// Tie, vote failed.
-			finalString = chosenUserVote; // TODO: Put here the actual cultist players vote, or if empty put random.
+			if (chosenUserVote != "") {
+				finalString = chosenUserVote;
+			} else {
+				finalString = voteOptions [UnityEngine.Random.Range (0, voteOptions.Length)];
+			}
 		}
 		Debug.Log (finalString);
 		//TODO: Send correct action according to finalString.
-		switch (finalString.ToLower()) {
-		case "up":
-			cultist.MoveUp ();
-			PollReset ();
-			break;
-		case "down":
-			cultist.MoveDown ();
-			PollReset ();
-			break;
-		case "left":
-			cultist.MoveLeft ();
-			PollReset ();
-			break;
-		case "right":
-			cultist.MoveRight ();
-			PollReset ();
-			break;
-		case "action":
-			cultist.Action ();
-			PollReset ();
-			break;
-		default:
-			Debug.Log ("Not a cultist command.");
-			IRC.SendMsg("Meditation vote failed.. doing nothing.");
-			//TODO: cultist.Idle();
-			PollReset ();
-			break;
-		}//end.switch(finalString)
+		ExecuteCommand(finalString);
 	} //End.SendActionMessage()
 
 	// Use this for initialization
@@ -170,5 +153,36 @@ public class TwitchIrcListener : MonoBehaviour {
 		// Invoke this when we want to choose new chosen twitch user as the cultist.
 		IRC.SendMsg ("!moobot raffle userlist");
 	} //End.ChoosePlayer()
+
+	void ExecuteCommand(string finalString) {
+		switch (finalString.ToLower()) {
+		case "up":
+			cultist.MoveUp ();
+			PollReset ();
+			break;
+		case "down":
+			cultist.MoveDown ();
+			PollReset ();
+			break;
+		case "left":
+			cultist.MoveLeft ();
+			PollReset ();
+			break;
+		case "right":
+			cultist.MoveRight ();
+			PollReset ();
+			break;
+		case "action":
+			cultist.Action ();
+			PollReset ();
+			break;
+		default:
+			Debug.Log ("Not a cultist command.");
+			IRC.SendMsg("Meditation vote failed.. -> doing nothing.");
+			//TODO: cultist.Idle();
+			PollReset ();
+			break;
+		}//end.switch(finalString)
+	}
 
 } //End.TwitchIRCListeners{}
