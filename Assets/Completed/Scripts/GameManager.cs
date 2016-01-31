@@ -332,6 +332,35 @@ namespace Completed
 			currentRitual = (Ritual)ritual;
 			//TODO ~Z 16.01.31 | Change ritual description text
 			Debug.Log( currentRitual );
+			var description = GameObject.Find ("Text Description").GetComponent<Text>();
+
+
+			//Set description text
+			switch (currentRitual)
+			{
+			case Ritual.None:
+				description.text = "You have gathered in the unholy halls of meditation. Choose your trial.";
+				break;
+			case Ritual.PrayOnAltar:
+				description.text = "You had an epiphany about a truly ancient instrument of worship. You must depart at once.";
+				break;
+			case Ritual.BargainWithAncient:
+				description.text = "Nightmarish visions of your Lord refuse to leave you, even after you've already woken up.";
+				break;
+			case Ritual.CleanseDungeon:
+				description.text = "The halls have grown cramped. You've been sent on a mission to sanctify the new cathedral with rivers of blood.";
+				break;
+			case Ritual.SummonMinions:
+				description.text = "You shall indeed become the new Maou!";
+				break;
+			case Ritual.MapDungeon:
+				description.text = "Truly a many soul has been lost underneath. You shall attain the forbidden knowledge at any cost.";
+				break;
+			default:
+				description.text = "You transcendence grows near.";
+				break;
+			}//end.switch
+
 		} //End.SetRitual()
 
 		public void LeaveGame() {
