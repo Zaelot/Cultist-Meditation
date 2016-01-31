@@ -50,9 +50,10 @@ public class TwitchIrcListener : MonoBehaviour {
 				break;
 			default:
 				break;
-			}
-		}
-	}
+			}//end.switch(msgString)
+		}//end.if(chosenUser)
+	} //OnChatMsgReceived()
+
 	void SendActionMessage(string msgString)
 	{
 		// Right (100%) Total votes: 2
@@ -66,7 +67,7 @@ public class TwitchIrcListener : MonoBehaviour {
 			if (!msgString.Contains ("%")) {
 				break;
 			}
-		}
+		}//end.while(%)
 		// Make array of percent values to check if there is a successful vote
 		ArrayList votePercents = new ArrayList();
 		for (int i = 0; i < voteArray.Count; i++) {
@@ -115,8 +116,9 @@ public class TwitchIrcListener : MonoBehaviour {
 			//TODO: cultist.Idle();
 			PollReset ();
 			break;
-		}
-	}
+		}//end.switch(finalString)
+	} //End.SendActionMessage()
+
 	// Use this for initialization
 	void Start()
 	{
@@ -133,13 +135,16 @@ public class TwitchIrcListener : MonoBehaviour {
 		}
 		IRC.SendMsg ("!moobot poll open up, down, left, right");
 		InvokeRepeating ("PollResults", timer, timer);
-	}
+	} //End.Start()
 
 	void PollReset()
 	{
-<<<<<<< HEAD
 		Debug.Log ("Attempting a !poll");
-		IRC.SendMsg ("!poll");
+//		IRC.SendMsg ("!poll");
+
+		IRC.SendMsg ("!moobot poll reset");
+		chosenUserVote = "";
+
 	} //End.PollReset()
 
 	public void SetCultist() {
@@ -154,20 +159,16 @@ public class TwitchIrcListener : MonoBehaviour {
 		}
 			
 	} //End.SetCultist()
-} //End.TwitchIRCListeners{}
-=======
-		IRC.SendMsg ("!moobot poll reset");
-		chosenUserVote = "";
-	}
+
 
 	void PollResults()
 	{
 		IRC.SendMsg ("!moobot poll results");
-	}
+	} //End.PollResults()
 
 	public void ChoosePlayer() {
 		// Invoke this when we want to choose new chosen twitch user as the cultist.
 		IRC.SendMsg ("!moobot raffle userlist");
-	}
-}
->>>>>>> master
+	} //End.ChoosePlayer()
+
+} //End.TwitchIRCListeners{}
