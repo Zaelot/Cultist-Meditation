@@ -50,6 +50,8 @@ namespace Completed
 		private Ritual currentRitual = Ritual.None;
 		private TwitchIrcListener currentIRCListener;
 
+		public List<AudioClip> audioClips;
+
 		public bool storyMode = true; //~Z 16.01.31 | Currently setting strictly from code - as this is generated in Runtime
 		
 		
@@ -89,6 +91,45 @@ namespace Completed
 		void OnLevelWasLoaded(int index)
 		{
 			Debug.Log ("Changed level, incrementing: " + level);
+
+			var levelName = SceneManager.GetActiveScene ().name;
+			var soundManagerGo = GameObject.Find ("SoundManager");
+			if (!soundManagerGo)
+				soundManagerGo = GameObject.Find ("SoundManager(Clone)");
+			var soundManager = soundManagerGo.GetComponent<SoundManager>();
+
+			switch (levelName) {
+			case "StoryApartment":
+				soundManager.musicSource.clip = audioClips [0]; 
+				soundManager.musicSource.Play ();
+				break;
+			case "Level_1":
+				soundManager.musicSource.clip = audioClips [1];
+				soundManager.musicSource.Play ();
+				break;
+			case "Level_2":
+				soundManager.musicSource.clip = audioClips [2];
+				soundManager.musicSource.Play ();
+				break;
+			case "Level_3":
+				soundManager.musicSource.clip = audioClips [3];
+				soundManager.musicSource.Play ();
+				break;
+			case "Level_4":
+				soundManager.musicSource.clip = audioClips [4];
+				soundManager.musicSource.Play ();
+				break;
+			case "Level_5":
+				soundManager.musicSource.clip = audioClips [5];
+				soundManager.musicSource.Play ();
+				break;
+			default:
+				soundManager.musicSource.clip = audioClips [1];
+				soundManager.musicSource.Play ();
+				break;
+
+			}
+
 
 			var textLevelName = GameObject.Find ("Text Level");
 			if (storyMode) {

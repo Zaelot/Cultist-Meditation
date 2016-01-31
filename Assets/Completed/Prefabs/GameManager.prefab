@@ -47,6 +47,13 @@ MonoBehaviour:
   playerFoodPoints: 100
   playersTurn: 1
   doingSetup: 1
+  audioClips:
+  - {fileID: 8300000, guid: 63ee0503c64fe49c68b7f29b517d6798, type: 3}
+  - {fileID: 8300000, guid: 2d75080d0851d4613ada1117d91ee417, type: 3}
+  - {fileID: 8300000, guid: e7913a9ec415c4a21b8315fcb9338077, type: 3}
+  - {fileID: 8300000, guid: e48d99a31a981432f9f6b5de9a29a347, type: 3}
+  - {fileID: 8300000, guid: 2a340662009d441e093e527c568c3704, type: 3}
+  - {fileID: 8300000, guid: d2c09320296d345a3b5c966c807d745d, type: 3}
   storyMode: 1
 --- !u!114 &11433658
 MonoBehaviour:
@@ -137,6 +144,14 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: AudioClips.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: audioClips.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: columns
       value: 12
       objectReference: {fileID: 0}
@@ -148,6 +163,54 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: AudioClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2d75080d0851d4613ada1117d91ee417, type: 3}
+    - target: {fileID: 0}
+      propertyPath: AudioClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: d2c09320296d345a3b5c966c807d745d, type: 3}
+    - target: {fileID: 0}
+      propertyPath: AudioClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: e7913a9ec415c4a21b8315fcb9338077, type: 3}
+    - target: {fileID: 0}
+      propertyPath: AudioClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: e48d99a31a981432f9f6b5de9a29a347, type: 3}
+    - target: {fileID: 0}
+      propertyPath: AudioClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2a340662009d441e093e527c568c3704, type: 3}
+    - target: {fileID: 0}
+      propertyPath: AudioClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 63ee0503c64fe49c68b7f29b517d6798, type: 3}
+    - target: {fileID: 0}
+      propertyPath: audioClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 63ee0503c64fe49c68b7f29b517d6798, type: 3}
+    - target: {fileID: 0}
+      propertyPath: audioClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2d75080d0851d4613ada1117d91ee417, type: 3}
+    - target: {fileID: 0}
+      propertyPath: audioClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: e7913a9ec415c4a21b8315fcb9338077, type: 3}
+    - target: {fileID: 0}
+      propertyPath: audioClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: e48d99a31a981432f9f6b5de9a29a347, type: 3}
+    - target: {fileID: 0}
+      propertyPath: audioClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2a340662009d441e093e527c568c3704, type: 3}
+    - target: {fileID: 0}
+      propertyPath: audioClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: d2c09320296d345a3b5c966c807d745d, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 133658}
