@@ -37,7 +37,8 @@ namespace Completed
 			food = GameManager.instance.playerFoodPoints;
 			
 			//Set the foodText to reflect the current player food total.
-			foodText.text = "Food: " + food;
+			if (foodText)
+				foodText.text = "Food: " + food;
 			
 			//Call the Start function of the MovingObject base class.
 			base.Start ();
@@ -134,7 +135,8 @@ namespace Completed
 			food--;
 			
 			//Update food text display to reflect current score.
-			foodText.text = "Food: " + food;
+			if (foodText)
+				foodText.text = "Food: " + food;
 			
 			//Call the AttemptMove method of the base class, passing in the component T (in this case Wall) and x and y direction to move.
 			base.AttemptMove <T> (xDir, yDir);
