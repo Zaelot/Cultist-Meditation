@@ -1,0 +1,275 @@
+fileFormatVersion: 2
+guid: 0b764590890804791aae571ab98306ed
+timeCreated: 1454238679
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Tree1_0
+    21300002: Tree1_1
+    21300004: Tree1_2
+    21300006: Tree1_3
+    21300008: Tree1_4
+    21300010: Tree1_5
+    21300012: Tree1_6
+    21300014: Tree1_7
+    21300016: Tree1_8
+    21300018: Tree1_9
+    21300020: Tree1_10
+    21300022: Tree1_11
+    21300024: Tree1_12
+    21300026: Tree1_13
+    21300028: Tree1_14
+    21300030: Tree1_15
+    21300032: Tree1_16
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Tree1_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 561
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tree1_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 561
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tree1_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 561
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tree1_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 561
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tree1_4
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 561
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tree1_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 561
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tree1_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 529
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tree1_7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 545
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tree1_8
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 545
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tree1_9
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 545
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tree1_10
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 529
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tree1_11
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 545
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tree1_12
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 545
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tree1_13
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 532
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tree1_14
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 529
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tree1_15
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 529
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tree1_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 192
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: -235}
+        - {x: -36, y: -265}
+        - {x: 46, y: -265}
+        - {x: 50, y: -262}
+        - {x: 50, y: -237}
+        - {x: 61, y: -235}
+        - {x: 60, y: -265}
+        - {x: 96, y: -265}
+        - {x: 96, y: 265}
+        - {x: -96, y: 265}
+        - {x: -96, y: -265}
+        - {x: -50, y: -265}
+        - {x: -46, y: -262}
+        - {x: -46, y: -237}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -49,6 +49,8 @@ namespace Completed
 
 		private Ritual currentRitual = Ritual.None;
 		private TwitchIrcListener currentIRCListener;
+
+		public bool storyMode = true; //~Z 16.01.31 | Currently setting strictly from code - as this is generated in Runtime
 		
 		
 		//Awake is always called before any Start functions ~Z 16.01.30 | Not 100% clear whether this is done on each Scene reload?
@@ -87,8 +89,19 @@ namespace Completed
 		void OnLevelWasLoaded(int index)
 		{
 			Debug.Log ("Changed level, incrementing: " + level);
+
+			var textLevelName = GameObject.Find ("Text Level");
+			if (storyMode) {
+				if (textLevelName != null)
+					textLevelName.SetActive (false); //disable all texts
+				var textGoal = GameObject.Find("Text Goal");
+				if (textGoal)
+					textGoal.SetActive (false);
+			}//end.if(storyMode)
+
+
 			//~Z 16.01.30 | if on second playthrough, reset level count and skip building the level
-			if (SceneManager.GetActiveScene ().name == "HomeApartment") {
+			if (SceneManager.GetActiveScene ().name == "HomeApartment") { //~Z 16.01.31 | Apparently we dropped this at last moment.
 				level = 1; //causing problems? - certainly was. dangerous to leave at 0
 				doingSetup = true; //~Z 16.01.30 | don't attempt enemy movement while in start menu
 				//if we are in the start menu a second time, it's lost the reference to the GameManager beacause it's separate instance
@@ -139,7 +152,7 @@ namespace Completed
 
 				return;
 			} else if (SceneManager.GetActiveScene ().name == "Level_1") {
-				switch (currentRitual) {
+				switch (currentRitual) { //not using this either..
 				case Ritual.None:
 					Debug.LogWarning ("Transcendendant!"); //cheat/error
 					break;
@@ -188,6 +201,16 @@ namespace Completed
 				//doingSetup = true; //~Z 16.01.30 | don't attempt enemy movement while in start menu
 				return;
 			}
+
+			if (levelName == "StoryApartment") { //~Z 16.01.31 | New start menu
+				level = 1;
+				doingSetup = false;
+
+
+				return;				
+			}
+
+
 
 			//While doingSetup is true the player can't move, prevent player from moving while title card is up.
 			doingSetup = true;
