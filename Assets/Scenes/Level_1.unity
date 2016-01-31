@@ -101,7 +101,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &129737103
 RectTransform:
   m_ObjectHideFlags: 0
@@ -788,7 +788,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "[!W]\u2191|\_[!A]\u2190 |\_[!S]\u2192 | [!D]\u2193"
+  m_Text: "[!vote W]\u2191|\_[!vote A]\u2190 |\_[!vote S]\u2193 | [!vote D]\u2192"
 --- !u!222 &632387571
 CanvasRenderer:
   m_ObjectHideFlags: 0
