@@ -116,6 +116,7 @@ public class TwitchIrcListener : MonoBehaviour {
 	void Start()
 	{
 		IRC = this.GetComponent<TwitchIRC>();
+		cultistGO = GameObject.Find ("Cultist");
 		if (cultistGO)
 			cultist = cultistGO.GetComponent<Cultist>();
 		//IRC.SendCommand("CAP REQ :twitch.tv/tags"); //register for additional data such as emote-ids, name color etc.

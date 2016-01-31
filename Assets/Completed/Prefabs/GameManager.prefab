@@ -44,8 +44,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelStartDelay: 2
   turnDelay: 0.1
+  playerFoodPoints: 100
   playersTurn: 1
   doingSetup: 1
+  storyMode: 1
 --- !u!114 &11433658
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -62,6 +64,9 @@ MonoBehaviour:
   wallCount:
     minimum: 5
     maximum: 9
+  foodCount:
+    minimum: 1
+    maximum: 5
   exit: {fileID: 110520, guid: cb0f3020bafec423aa31d0e491c4b811, type: 2}
   floorTiles:
   - {fileID: 106160, guid: 038998774947c4a8fa170d5b4492a7dd, type: 2}
@@ -81,6 +86,7 @@ MonoBehaviour:
   - {fileID: 110520, guid: 5ddc2d7828b2d462286f09274199ad9a, type: 2}
   - {fileID: 110520, guid: 64139c47b57e34c5fa97fd79f8d25244, type: 2}
   - {fileID: 110520, guid: 741804431f4d341cdae1f15b3896aeff, type: 2}
+  foodTiles: []
   enemyTiles:
   - {fileID: 161064, guid: 089a2f2c322ea40f9afdfaba0550c6d3, type: 2}
   - {fileID: 195068, guid: ebfba08a213d34c46ba2b1947aeaea83, type: 2}
@@ -94,7 +100,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 133658}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d10a222ac5604454381ce04bbfd62474, type: 3}
   m_Name: 
@@ -109,7 +115,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 133658}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2361c5a2732514f16b859ac93a325248, type: 3}
   m_Name: 
@@ -140,7 +146,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
