@@ -21,7 +21,7 @@ namespace Completed
 		public AudioClip gameOverSound;				//Audio clip to play when player dies.
 		
 		private Animator animator;					//Used to store a reference to the Player's animator component.
-		private int food;							//Used to store player food points total during level.
+		private int food = 100;							//Used to store player food points total during level.
 		private Vector2 touchOrigin = -Vector2.one;	//Used to store location of screen touch origin for mobile controls.
 
 		//TODO ~Z 16.01.30 | Need something to avoid moving by itself when spamming RelateMove()

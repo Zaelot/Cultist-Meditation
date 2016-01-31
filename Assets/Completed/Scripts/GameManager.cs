@@ -89,7 +89,7 @@ namespace Completed
 			Debug.Log ("Changed level, incrementing: " + level);
 			//~Z 16.01.30 | if on second playthrough, reset level count and skip building the level
 			if (SceneManager.GetActiveScene ().name == "HomeApartment") {
-				level = 1; //causing problems?
+				level = 1; //causing problems? - certainly was. dangerous to leave at 0
 				doingSetup = true; //~Z 16.01.30 | don't attempt enemy movement while in start menu
 				//if we are in the start menu a second time, it's lost the reference to the GameManager beacause it's separate instance
 				var dropDown = GameObject.Find("Dropdown Goal");
@@ -130,6 +130,10 @@ namespace Completed
 				var button = GameObject.Find("Button Begin");
 				button.GetComponent<Button> ().onClick.RemoveAllListeners ();
 				button.GetComponent<Button> ().onClick.AddListener (() => { ChangeLevel(); } );
+
+				var buttonQuit = GameObject.Find ("Button Exit");
+				buttonQuit.GetComponent<Button> ().onClick.RemoveAllListeners ();
+				buttonQuit.GetComponent<Button> ().onClick.AddListener ( () => { LeaveGame(); } );
 
 
 
@@ -262,6 +266,7 @@ namespace Completed
 			//Enable black background image gameObject.
 			levelImage.SetActive(true);
 
+			playerFoodPoints = 100;
 
 			//Disable this GameManager. ~Z 16.01.30 | Nope, we just start over with fresh character
 			//enabled = false;
@@ -328,6 +333,10 @@ namespace Completed
 			//TODO ~Z 16.01.31 | Change ritual description text
 			Debug.Log( currentRitual );
 		} //End.SetRitual()
+
+		public void LeaveGame() {
+			Application.Quit ();
+		} //End.LeaveGame()
 
 	} //End.GameManager{}
 } //End.Completed{} - namespace
