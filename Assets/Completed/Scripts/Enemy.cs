@@ -73,6 +73,9 @@ namespace Completed
 			int yDir = 0;
 			
 			//If the difference in positions is approximately zero (Epsilon) do the following:
+			if (!this || !transform)
+				return;
+
 			if(Mathf.Abs (target.position.x - transform.position.x) < float.Epsilon) //FIXME ~Z 16.01.30 | Somehow managed to end up here while losing the transform?
 				
 				//If the y coordinate of the target's (player) position is greater than the y coordinate of this enemy's position set y direction 1 (to move up). If not, set it to -1 (to move down).
