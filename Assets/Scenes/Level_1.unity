@@ -1163,9 +1163,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2361c5a2732514f16b859ac93a325248, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  botName: domestus
+  botName: moobot
   cultistGO: {fileID: 881706622}
   voteOptions: []
+  timer: 10
 --- !u!114 &1706141505
 MonoBehaviour:
   m_ObjectHideFlags: 0

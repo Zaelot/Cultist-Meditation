@@ -10,6 +10,7 @@ public class TwitchIrcListener : MonoBehaviour {
 	private Cultist cultist;
 	private TwitchIRC IRC;
 	public string[] voteOptions;
+	public float timer = 15.0f;
 	//when message is recieved from IRC-server or our own message.
 	void OnChatMsgReceived(string msg)
 	{
@@ -24,6 +25,9 @@ public class TwitchIrcListener : MonoBehaviour {
 				// Vote results get.
 				Debug.Log("Found poll results.");
 				SendActionMessage(msgString);
+			}
+			if (msgString.Contains ("")) {
+
 			}
 		}
 	}
@@ -101,6 +105,13 @@ public class TwitchIrcListener : MonoBehaviour {
 		foreach (string vote in voteOptions) {
 			votes = votes + " " + vote;
 		}
-		IRC.SendMsg ("!moobot poll open Up, Down, Left, Right, Action"); 
+		IRC.SendMsg ("!moobot poll open Up, Down, Left, Right, Action");
+		InvokeRepeating ("PollReset", timer, timer);
+	}
+
+	void PollReset()
+	{
+		Debug.Log ("Attempting a !poll");
+		IRC.SendMsg ("!poll");
 	}
 }
