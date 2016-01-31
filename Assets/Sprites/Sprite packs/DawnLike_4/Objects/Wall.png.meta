@@ -1,0 +1,302 @@
+fileFormatVersion: 2
+guid: 72fb16570fd3e4e4d98e94e8090e04ea
+timeCreated: 1454238664
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Wall_0
+    21300002: Wall_1
+    21300004: Wall_2
+    21300006: Wall_3
+    21300008: Wall_4
+    21300010: Wall_5
+    21300012: Wall_6
+    21300014: Wall_7
+    21300016: Wall_8
+    21300018: Wall_9
+    21300020: Wall_10
+    21300022: Wall_11
+    21300024: Wall_12
+    21300026: Wall_13
+    21300028: Wall_14
+    21300030: Wall_15
+    21300032: Wall_16
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Wall_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 801
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Wall_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 806
+        width: 14
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Wall_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 801
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Wall_3
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 804
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Wall_4
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 801
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Wall_5
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 784
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 16}
+        - {x: -64, y: -16}
+        - {x: 64, y: -16}
+        - {x: 64, y: 16}
+    - name: Wall_6
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 785
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Wall_7
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 788
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Wall_8
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 785
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Wall_9
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 785
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Wall_10
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 785
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Wall_11
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 774
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Wall_12
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 774
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Wall_13
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 774
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Wall_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 96
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48, y: -370}
+        - {x: 48, y: -350}
+        - {x: 34, y: -350}
+        - {x: 48, y: -323}
+        - {x: 48, y: -302}
+        - {x: 34, y: -302}
+        - {x: 48, y: -275}
+        - {x: 48, y: 370}
+        - {x: 34, y: 384}
+        - {x: -48, y: 384}
+        - {x: -48, y: -384}
+        - {x: 34, y: -384}
+    - name: Wall_15
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 96
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48, y: -323}
+        - {x: 48, y: -302}
+        - {x: 34, y: -302}
+        - {x: 48, y: -275}
+        - {x: 48, y: 370}
+        - {x: 35, y: 384}
+        - {x: -46, y: 384}
+        - {x: -48, y: 381}
+        - {x: -48, y: -384}
+        - {x: 34, y: -384}
+        - {x: 48, y: -370}
+        - {x: 48, y: -350}
+        - {x: 34, y: -350}
+    - name: Wall_16
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 96
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48, y: -370}
+        - {x: 48, y: -350}
+        - {x: 34, y: -350}
+        - {x: 48, y: -323}
+        - {x: 48, y: -302}
+        - {x: 34, y: -302}
+        - {x: 48, y: -275}
+        - {x: 48, y: 370}
+        - {x: 34, y: 384}
+        - {x: -48, y: 384}
+        - {x: -48, y: -384}
+        - {x: 34, y: -384}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
