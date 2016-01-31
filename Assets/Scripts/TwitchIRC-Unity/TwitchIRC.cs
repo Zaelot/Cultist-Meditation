@@ -44,7 +44,7 @@ public class TwitchIRC : MonoBehaviour
         //input proc
         inProc = new System.Threading.Thread(() => IRCInputProcedure(input, networkStream));
         inProc.Start();
-    }
+	} //End.StartIRC()
     private void IRCInputProcedure(System.IO.TextReader input, System.Net.Sockets.NetworkStream networkStream)
     {
         while (!stopThreads)
@@ -74,8 +74,8 @@ public class TwitchIRC : MonoBehaviour
             {
                 SendCommand("JOIN #" + channelName);
             }
-        }
-    }
+		}//end.while()
+	} //End.IRCInputProcedure()
     private void IRCOutputProcedure(System.IO.TextWriter output)
     {
         System.Diagnostics.Stopwatch stopWatch = new System.Diagnostics.Stopwatch();
@@ -99,10 +99,10 @@ public class TwitchIRC : MonoBehaviour
                         stopWatch.Reset();
                         stopWatch.Start();
                     }
-                }
-            }
-        }
-    }
+				}//end.if(commandQueue)
+            }//end.lock
+        }//end.while
+	} //End.IRCOutputProcedure()
 
     public void SendCommand(string cmd)
     {
@@ -110,39 +110,39 @@ public class TwitchIRC : MonoBehaviour
         {
             commandQueue.Enqueue(cmd);
         }
-    }
+	} //End.SendCommand()
     public void SendMsg(string msg)
     {
         lock (commandQueue)
         {
             commandQueue.Enqueue("PRIVMSG #" + channelName + " :" + msg);
         }
-    }
+	} //End.SendMsg()
 
     //MonoBehaviour Events.
     void Start()
     {
 		oauth = oauthTxt.text;
-    }
+	} //End.Start()
     void OnEnable()
     {
         stopThreads = false;
         StartIRC();
-    }
+    } //End.OnEnable
     void OnDisable()
     {
         stopThreads = true;
         //while (inProc.IsAlive || outProc.IsAlive) ;
         //print("inProc:" + inProc.IsAlive.ToString());
         //print("outProc:" + outProc.IsAlive.ToString());
-    }
+	} //End.OnDisable()
     void OnDestroy()
     {
         stopThreads = true;
         //while (inProc.IsAlive || outProc.IsAlive) ;
         //print("inProc:" + inProc.IsAlive.ToString());
         //print("outProc:" + outProc.IsAlive.ToString());
-    }
+	} //End.OnDestroy()
     void Update()
     {
         lock (recievedMsgs)
@@ -153,8 +153,8 @@ public class TwitchIRC : MonoBehaviour
                 {
                     messageRecievedEvent.Invoke(recievedMsgs[i]);
                 }
-                recievedMsgs.Clear();
-            }
-        }
-    }
-}
+                recievedMsgs.Clear(); //FIXME ~Z 16.01.31 | Missing obj
+            }//end.if
+        }//end.lock
+	} //End.Update()
+} //End.TwitchIRC{}
