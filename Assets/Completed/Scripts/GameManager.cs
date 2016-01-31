@@ -47,6 +47,7 @@ namespace Completed
 		private List<Enemy> enemies5;
 
 		private Ritual currentRitual = Ritual.None;
+		private TwitchIrcListener currentIRCListener;
 		
 		
 		//Awake is always called before any Start functions ~Z 16.01.30 | Not 100% clear whether this is done on each Scene reload?
@@ -75,6 +76,7 @@ namespace Completed
 			
 			//Get a component reference to the attached BoardManager script
 			boardScript = GetComponent<BoardManager>();
+			currentIRCListener = GetComponent<TwitchIrcListener> ();
 			
 			//Call the InitGame function to initialize the first level 
 			InitGame();
@@ -96,29 +98,34 @@ namespace Completed
 					break;
 				case Ritual.PrayOnAltar:
 					Debug.Log ("Ritual of Desire");
-					//TODO ~Z 16.01.30 | Dog?
+					//TODO ~Z 16.01.31 | Dog?
 					break;
 				case Ritual.BargainWithAncient:
 					Debug.Log ("Ritual of Power");
-					//TODO ~Z 16.01.30 | ?
+					//TODO ~Z 16.01.31 | ?
 					break;
 				case Ritual.CleanseDungeon:
 					Debug.Log ("Ritual of Blood");
-					//TODO ~Z 16.01.30 | Crowbar
+					//TODO ~Z 16.01.31 | Crowbar
 					break;
 				case Ritual.SummonMinions:
 					Debug.Log ("Ritual of Rulership");
-					//TODO ~Z 16.01.30 | Dagger?
+					//TODO ~Z 16.01.31 | Dagger?
 					break;
 				case Ritual.MapDungeon:
 					Debug.Log ("Ritual of Knowledge");
-					//TODO ~Z 16.01.30 | Smartphone and map
+					//TODO ~Z 16.01.31 | Smartphone and map
 					break;
 				default:
 					Debug.Log ("Ritual unclear.");
 					break;
 				}//end.switch(ritual)
 			}//end.else if (First level)
+
+			//~Z 16.01.31 | Assign the cultist (player) that we are both missing, coming from the Start Menu, and probably different when changing levels.
+			currentIRCListener.cultistGO = GameObject.Find("Cultist");
+			currentIRCListener.SetCultist();
+
 			//Add one to our level number.
 			level++;
 			//Call InitGame to initialize our level.
