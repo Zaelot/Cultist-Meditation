@@ -10,7 +10,8 @@ namespace Completed
 	using System.Collections.Generic;		//Allows us to use Lists. 
 	using UnityEngine.UI;					//Allows us to use UI.
 	using UnityEngine.SceneManagement;		//~Z 16.01.30 | Allows the use of SceneManager
-
+	using UnityEngine.Events;
+	using UnityEngine.EventSystems;
 
 	public enum Ritual { //Goals
 		None,
@@ -88,8 +89,50 @@ namespace Completed
 			Debug.Log ("Changed level, incrementing: " + level);
 			//~Z 16.01.30 | if on second playthrough, reset level count and skip building the level
 			if (SceneManager.GetActiveScene ().name == "HomeApartment") {
-				level = 0;
+				level = 1; //causing problems?
 				doingSetup = true; //~Z 16.01.30 | don't attempt enemy movement while in start menu
+				//if we are in the start menu a second time, it's lost the reference to the GameManager beacause it's separate instance
+				var dropDown = GameObject.Find("Dropdown Goal");
+
+				/*
+				//Get the event trigger attached to the UI object
+				EventTrigger eventTrigger = buttonObject.GetComponent<EventTrigger>();
+
+				//Create a new entry. This entry will describe the kind of event we're looking for
+				// and how to respond to it
+				EventTrigger.Entry entry = new EventTrigger.Entry();
+
+				//This event will respond to a drop event
+				entry.eventID = EventTriggerType.Drop;
+
+				//Create a new trigger to hold our callback methods
+				entry.callback = new EventTrigger.TriggerEvent();
+
+				//Create a new UnityAction, it contains our DropEventMethod delegate to respond to events
+				UnityEngine.Events.UnityAction<BaseEventData> callback =
+					new UnityEngine.Events.UnityAction<BaseEventData>(DropEventMethod);
+
+				//Add our callback to the listeners
+				entry.callback.AddListener(callback);
+
+				//Add the EventTrigger entry to the event trigger component
+				eventTrigger.delegates.Add(entry);
+				*/
+//				UnityEngine.Events.UnityAction<BaseEventData> callback =
+//					new UnityEngine.Events.UnityAction<BaseEventData>(DropEventMethod);
+				
+
+				//UnityAction action = new UnityAction(() => { SetRitual(dropDown.GetComponent<Dropdown>().value); });
+//				dropDown.GetComponent<Dropdown> ().onValueChanged.AddListener( new UnityAction<int>(() => { SetRitual(BaseEventData); }) ); 
+				dropDown.GetComponent<Dropdown>().onValueChanged.RemoveAllListeners();
+				dropDown.GetComponent<Dropdown>().onValueChanged.AddListener(delegate { SetRitual(dropDown.GetComponent<Dropdown>().value); } );
+//				dropdownMenu.onValueChanged.AddListener(delegate { Screen.SetResolution(resolutions[dropdownMenu.value].width, resolutions[dropdownMenu.value].height, true); });
+				var button = GameObject.Find("Button Begin");
+				button.GetComponent<Button> ().onClick.RemoveAllListeners ();
+				button.GetComponent<Button> ().onClick.AddListener (() => { ChangeLevel(); } );
+
+
+
 				return;
 			} else if (SceneManager.GetActiveScene ().name == "Level_1") {
 				switch (currentRitual) {
@@ -270,10 +313,14 @@ namespace Completed
 				
 
 			Debug.Log ("Level: " + level);
-			if (level >= 6) //if we're at the end, go to start menu
-				level = 0;
-			Debug.Log ( "Changing scene to: " + level ); //somehow constantly 0
-			SceneManager.LoadScene (level);
+			if (level >= 6) { //if we're at the end, go to start menu
+				level = 1;
+				SceneManager.LoadScene (0); //go to start menu, although we could just start doing that random generation at this point.
+			} else {
+				Debug.Log ("Changing scene to: " + level); //somehow constantly 0		
+				SceneManager.LoadScene (level);
+			}
+
 		} //End.ChangeLeveL()
 
 		public void SetRitual( int ritual ) {
