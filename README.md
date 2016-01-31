@@ -1,5 +1,5 @@
-# Cultist Meditation
-Finnish Game Jam 2016 [Twitch Plays Roguelike](http://zaelot.github.io/Cultist-Meditation/)
+# [Cultist Meditation](http://zaelot.github.io/Cultist-Meditation/)
+Finnish Game Jam 2016 Twitch Plays Roguelike
 ==========
 
 This game attaches to a specified twitch channel to read and write to the chat via IRC protocol. The game uses Moobot for its Poll feature to let players affect how the game goes forward.
