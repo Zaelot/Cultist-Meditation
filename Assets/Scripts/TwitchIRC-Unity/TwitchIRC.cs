@@ -122,11 +122,11 @@ public class TwitchIRC : MonoBehaviour
     //MonoBehaviour Events.
     void Start()
     {
-		oauthTxt = (TextAsset)Resources.Load("oauth", typeof(TextAsset));
-		oauth = oauthTxt.text;
 	} //End.Start()
     void OnEnable()
     {
+		oauthTxt = (TextAsset)Resources.Load("oauth", typeof(TextAsset));
+		oauth = oauthTxt.text;
         stopThreads = false;
         StartIRC();
     } //End.OnEnable
