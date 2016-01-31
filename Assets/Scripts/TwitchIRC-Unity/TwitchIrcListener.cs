@@ -50,9 +50,10 @@ public class TwitchIrcListener : MonoBehaviour {
 				break;
 			default:
 				break;
-			}
-		}
-	}
+			}//end.switch(msgString)
+		}//end.if(chosenUser)
+	} //OnChatMsgReceived()
+
 	void SendActionMessage(string msgString)
 	{
 		// Right (100%) Total votes: 2
@@ -66,7 +67,7 @@ public class TwitchIrcListener : MonoBehaviour {
 			if (!msgString.Contains ("%")) {
 				break;
 			}
-		}
+		}//end.while(%)
 		// Make array of percent values to check if there is a successful vote
 		ArrayList votePercents = new ArrayList();
 		for (int i = 0; i < voteArray.Count; i++) {
@@ -115,13 +116,15 @@ public class TwitchIrcListener : MonoBehaviour {
 			//TODO: cultist.Idle();
 			PollReset ();
 			break;
-		}
-	}
+		}//end.switch(finalString)
+	} //End.SendActionMessage()
+
 	// Use this for initialization
 	void Start()
 	{
 		IRC = this.GetComponent<TwitchIRC>();
-		cultist = cultistGO.GetComponent<Cultist>();
+		if (cultistGO)
+			cultist = cultistGO.GetComponent<Cultist>();
 		//IRC.SendCommand("CAP REQ :twitch.tv/tags"); //register for additional data such as emote-ids, name color etc.
 		IRC.messageRecievedEvent.AddListener(OnChatMsgReceived);
 
@@ -132,21 +135,40 @@ public class TwitchIrcListener : MonoBehaviour {
 		}
 		IRC.SendMsg ("!moobot poll open up, down, left, right");
 		InvokeRepeating ("PollResults", timer, timer);
-	}
+	} //End.Start()
 
 	void PollReset()
 	{
+		Debug.Log ("Attempting a !poll");
+//		IRC.SendMsg ("!poll");
+
 		IRC.SendMsg ("!moobot poll reset");
 		chosenUserVote = "";
-	}
+
+	} //End.PollReset()
+
+	public void SetCultist() {
+		if (cultistGO)
+			cultist = cultistGO.GetComponent<Cultist> ();
+		else {
+			cultistGO = GameObject.Find ("Cultist");
+			if (cultistGO)
+				cultist = cultistGO.GetComponent<Cultist> ();
+			else
+				Debug.LogWarning ("Cultist not found.");
+		}
+			
+	} //End.SetCultist()
+
 
 	void PollResults()
 	{
 		IRC.SendMsg ("!moobot poll results");
-	}
+	} //End.PollResults()
 
 	public void ChoosePlayer() {
 		// Invoke this when we want to choose new chosen twitch user as the cultist.
 		IRC.SendMsg ("!moobot raffle userlist");
-	}
-}
+	} //End.ChoosePlayer()
+
+} //End.TwitchIRCListeners{}
