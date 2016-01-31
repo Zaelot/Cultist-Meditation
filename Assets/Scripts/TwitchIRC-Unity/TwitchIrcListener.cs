@@ -64,12 +64,12 @@ public class TwitchIrcListener : MonoBehaviour {
 	{
 		// Right (100%) Total votes: 2
 		// Left (50%) Right (50%) Total votes: 2
-
+		msgString = msgString.Substring(msgString.IndexOf(":")+1);
 		// Make array of Strings with values such as "Left (50%)"
 		ArrayList voteArray = new ArrayList();
 		while (msgString.Contains("%")) {
 			voteArray.Add(msgString.TrimStart().Substring (0, msgString.IndexOf (')')+1));
-			msgString = msgString.Substring (msgString.IndexOf ('%')+2);
+			msgString = msgString.Substring (msgString.IndexOf (')')+1);
 			if (!msgString.Contains ("%")) {
 				break;
 			}
@@ -95,6 +95,7 @@ public class TwitchIrcListener : MonoBehaviour {
 				finalString = chosenUserVote;
 			} else {
 				finalString = voteOptions [UnityEngine.Random.Range (0, voteOptions.Length)];
+				IRC.SendMsg ("Vote failed? Let's move " + finalString + " then.");
 			}
 		}
 		Debug.Log (finalString);
@@ -155,6 +156,7 @@ public class TwitchIrcListener : MonoBehaviour {
 	} //End.ChoosePlayer()
 
 	void ExecuteCommand(string finalString) {
+		Debug.Log ("finalString: " + finalString);
 		switch (finalString.ToLower()) {
 		case "up":
 			cultist.MoveUp ();
