@@ -38,3 +38,7 @@ sysinfo.txt
 ehthumbs.db
 Thumbs.db
 .orig
+
+# twitch oauth file
+/Assets/Resources/oauth.txt
+/Assets/Resources/oauth.txt.meta

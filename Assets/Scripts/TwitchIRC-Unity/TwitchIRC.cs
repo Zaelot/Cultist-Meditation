@@ -4,9 +4,10 @@ using System.Collections.Generic;
 
 public class TwitchIRC : MonoBehaviour
 {
-	public string oauth = "oauth:flpi791bc6h7pk3io8dmd3ljr3xjrt";
-    public string nickName = "domestus";
-    public string channelName = "domestus";
+	public TextAsset oauthTxt = (TextAsset)Resources.Load("oauth", typeof(TextAsset));
+	public string oauth = ""; //Automatically read via Assets/oauth.txt
+    public string nickName = "cultistmeditationbot";
+    public string channelName = "cultistmeditationbot";
     private string server = "irc.twitch.tv";
     private int port = 6667;
 
@@ -121,6 +122,7 @@ public class TwitchIRC : MonoBehaviour
     //MonoBehaviour Events.
     void Start()
     {
+		oauth = oauthTxt.text;
     }
     void OnEnable()
     {

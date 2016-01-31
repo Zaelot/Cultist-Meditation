@@ -5,7 +5,9 @@ using System;
 
 [RequireComponent(typeof(TwitchIRC))]
 public class TwitchIrcListener : MonoBehaviour {
-	public string botName;
+	public string botName = "moobot";
+	public string chosenUser = "";
+	private string chosenUserVote = "";
 	public GameObject cultistGO;
 	private Cultist cultist;
 	private TwitchIRC IRC;
@@ -26,8 +28,28 @@ public class TwitchIrcListener : MonoBehaviour {
 				Debug.Log("Found poll results.");
 				SendActionMessage(msgString);
 			}
-			if (msgString.Contains ("")) {
-
+			if (msgString.Contains ("Drew user ")) {
+				int lastIndex = msgString.IndexOf ("(");
+				chosenUser = msgString.Substring (10, lastIndex - 11);
+				Debug.Log ("Drew user: " + chosenUser);
+			}
+		}
+		if (user == chosenUser) {
+			switch (msgString.ToLower()) {
+			case "!vote up":
+				chosenUserVote = "up";
+				break;
+			case "!vote down":
+				chosenUserVote = "down";
+				break;
+			case "!vote left":
+				chosenUserVote = "left";
+				break;
+			case "!vote right":
+				chosenUserVote = "right";
+				break;
+			default:
+				break;
 			}
 		}
 	}
@@ -62,33 +84,36 @@ public class TwitchIrcListener : MonoBehaviour {
 		} else {
 			Debug.Log ("Vote fails.");
 			// Tie, vote failed.
-			finalString = "Random"; // TODO: Put here the actual cultist players vote, or if empty put random.
+			finalString = chosenUserVote; // TODO: Put here the actual cultist players vote, or if empty put random.
 		}
 		Debug.Log (finalString);
 		//TODO: Send correct action according to finalString.
-		switch (finalString) {
-		case "Up":
+		switch (finalString.ToLower()) {
+		case "up":
 			cultist.MoveUp ();
-			IRC.SendMsg("!moobot poll reset"); //send message.
+			PollReset ();
 			break;
-		case "Down":
+		case "down":
 			cultist.MoveDown ();
-			IRC.SendMsg("!moobot poll reset"); //send message.
+			PollReset ();
 			break;
-		case "Left":
+		case "left":
 			cultist.MoveLeft ();
-			IRC.SendMsg("!moobot poll reset"); //send message.
+			PollReset ();
 			break;
-		case "Right":
+		case "right":
 			cultist.MoveRight ();
-			IRC.SendMsg("!moobot poll reset"); //send message.
+			PollReset ();
 			break;
-		case "Action":
+		case "action":
 			cultist.Action ();
-			IRC.SendMsg("!moobot poll reset"); //send message.
+			PollReset ();
 			break;
 		default:
 			Debug.Log ("Not a cultist command.");
+			IRC.SendMsg("Meditation vote failed.. doing nothing.");
+			//TODO: cultist.Idle();
+			PollReset ();
 			break;
 		}
 	}
@@ -105,13 +130,23 @@ public class TwitchIrcListener : MonoBehaviour {
 		foreach (string vote in voteOptions) {
 			votes = votes + " " + vote;
 		}
-		IRC.SendMsg ("!moobot poll open Up, Down, Left, Right, Action");
-		InvokeRepeating ("PollReset", timer, timer);
+		IRC.SendMsg ("!moobot poll open up, down, left, right");
+		InvokeRepeating ("PollResults", timer, timer);
 	}
 
 	void PollReset()
 	{
-		Debug.Log ("Attempting a !poll");
-		IRC.SendMsg ("!poll");
+		IRC.SendMsg ("!moobot poll reset");
+		chosenUserVote = "";
+	}
+
+	void PollResults()
+	{
+		IRC.SendMsg ("!moobot poll results");
+	}
+
+	public void ChoosePlayer() {
+		// Invoke this when we want to choose new chosen twitch user as the cultist.
+		IRC.SendMsg ("!moobot raffle userlist");
 	}
 }
